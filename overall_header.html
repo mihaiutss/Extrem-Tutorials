@@ -291,7 +291,7 @@
 </div>
 <!-- END switch_like_popup -->
 
-<a id="top" name="top" accesskey="t"></a>
+<div id="wrapper" class="container">
 
 <div class="header-bf">
   <div class="gradient-leader">
@@ -397,6 +397,7 @@
     </ul>
    </div>
   </li>
+  <!-- BEGIN switch_user_logged_out -->
   <li class="right">
    <a href="/register">
     <i class="fa fa-user-plus">
@@ -438,6 +439,18 @@
     </form>
    </div>
   </li>
+  <!-- END switch_user_logged_out -->
+  <li class="right profile custom-profile">
+  <!-- BEGIN switch_user_logged_in -->
+   <a href="/profile?mode=editprofile"><i class="fa fa-cog"></i>Editare Profil</a>
+   <!-- END switch_user_logged_in -->
+  <div class="grid-container3">
+    <ul>
+   <li><a href="/privmsg?folder=inbox"><i class="fa fa-envelope"></i>Mesaje Private</a></li>
+   <li><a href="/login?logout=1"><i class="fa fa-sign-out"></i>Deconectare</a></li>
+    </ul>
+   </div>
+   </li>
   <li class="right search">
    <form action="/search?search_where=11" method="get">
     <div class="input">
@@ -496,7 +509,7 @@
 				<div id="page-body">
 					<div id="{ID_CONTENT_CONTAINER}"{CLASS_CONTENT_CONTAINER}>
 						<div id="outer-wrapper">
-							<div id="wrapper">
+							<div id="wrapper" class="container">
 								<div id="container">
 									<div id="content">
 										<div id="{ID_LEFT}">
