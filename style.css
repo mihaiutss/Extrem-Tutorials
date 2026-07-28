@@ -10,3 +10,15 @@
 #wrapper.container {
     width: 96%!important;
 }
+#pun-about {
+    border: none !important;
+    text-align: left !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+#page-footer,
+#page-footer .container,
+#page-footer .span12 {
+    padding-left: 10px !important;
+    margin-left: 0 !important;
+}
