@@ -33,9 +33,9 @@
 		<thead>
 			<tr>
 				<!--- <th class="tcl">{L_TOPICS}</th>
-                                <th class="tc2">{topics_list_box.row.L_REPLIES}</th>
-                                <th class="tc3">{topics_list_box.row.L_VIEWS}</th>
-				<!--- <th class="tcr">{topics_list_box.row.L_LASTPOST}</th> --->
+				<th class="tc2">{topics_list_box.row.L_REPLIES}</th>
+				<th class="tc3">{topics_list_box.row.L_VIEWS}</th>
+				<th class="tcr">{topics_list_box.row.L_LASTPOST}</th> --->
 			</tr>
 		</thead>
 		<tbody class="statused">
@@ -83,20 +83,20 @@
 				{topics_list_box.row.TOPIC_TYPE}&nbsp;
 				<h2 class="topic-title"><a class="topictitle" href="{topics_list_box.row.U_VIEW_TOPIC}">{topics_list_box.row.TOPIC_TITLE}</a></h2>&nbsp;
 				{topics_list_box.row.GOTO_OPEN} {topics_list_box.row.GOTO_PAGE_NEW} {topics_list_box.row.GOTO_CLOSE}&nbsp;
-				{topics_list_box.row.L_BY} {topics_list_box.row.TOPIC_AUTHOR}
+				<br>Topic inițiat de: {topics_list_box.row.TOPIC_AUTHOR}
 				<!-- BEGIN switch_description -->
 				<br />
 				&nbsp;{topics_list_box.row.topic.switch_description.TOPIC_DESCRIPTION}
 				<!-- END switch_description -->
 			</td>
-                        <td class="tc2 <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->"><b>{topics_list_box.row.REPLIES}</b> replici</td>
-                        <td class="tc3 <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->"><b>{topics_list_box.row.VIEWS}</b> vizite</td>
+			<td class="tc2 <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->"><b>{topics_list_box.row.REPLIES}</b> replici<br><b>{topics_list_box.row.VIEWS}</b> vizite</td>
+			<td class="tc3 <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->"><!--- <b>{topics_list_box.row.VIEWS}</b> vizite</td> --->
 			<td class="tcr <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->">
                 <!-- BEGIN avatar -->
                 <span class="lastpost-avatar">{topics_list_box.row.topic.avatar.LAST_POST_AVATAR}</span>
                 <!-- END avatar -->
 
-                {topics_list_box.row.LAST_POST_TIME} {topics_list_box.row.L_BY} {topics_list_box.row.LAST_POST_AUTHOR} {topics_list_box.row.LAST_POST_IMG}
+                 {topics_list_box.row.LAST_POST_TIME} {topics_list_box.row.LAST_POST_AUTHOR} {topics_list_box.row.LAST_POST_IMG}
             </td>
 			<!-- BEGIN multi_selection -->
 			<td><input onclick="javascript:check_uncheck_main_{topics_list_box.row.BOX_ID}();" type="checkbox" name="{topics_list_box.FIELDNAME}[]{topics_list_box.row.BOX_ID}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} /></td>
