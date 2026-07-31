@@ -145,128 +145,71 @@ showHiddenMessage = function(id)
 			<!-- END hidden -->
 			
 <!-- BEGIN displayed -->
- 
-<div class="blog_post">
-    <div class="blog_post_info">
-        {postrow.displayed.POSTER_AVATAR}
-        Scris de <strong>{postrow.displayed.POSTER_NAME}</strong> in data de {postrow.displayed.POST_DATE_NEW}
-        <span style="float:right;"><i class="fa fa-lock"></i> Adresa IP</span>
-    </div>
- 
-    <div class="resize blogr">
-        <div class="post-entry">
-            <div class="entry-content">
-                <!-- BEGIN switch_vote_active -->
-                <div class="vote gensmall">
-                    <!-- BEGIN switch_vote -->
-                    <div class="vote-button"><a href="{postrow.displayed.switch_vote_active.switch_vote.U_VOTE_PLUS}">+</a></div>
-                    <!-- END switch_vote -->
-                    <!-- BEGIN switch_bar -->
-                    <div class="vote-bar" title="{postrow.displayed.switch_vote_active.L_VOTE_TITLE}">
-                        <!-- BEGIN switch_vote_plus -->
-                        <div class="vote-bar-plus" style="height:{postrow.displayed.switch_vote_active.switch_bar.switch_vote_plus.HEIGHT_PLUS}px;"></div>
-                        <!-- END switch_vote_plus -->
-                        <!-- BEGIN switch_vote_minus -->
-                        <div class="vote-bar-minus" style="height:{postrow.displayed.switch_vote_active.switch_bar.switch_vote_minus.HEIGHT_MINUS}px;"></div>
-                        <!-- END switch_vote_minus -->
-                    </div>
-                    <!-- END switch_bar -->
-                    <!-- BEGIN switch_no_bar -->
-                    <div title="{postrow.displayed.switch_vote_active.L_VOTE_TITLE}" class="vote-no-bar">----</div>
-                    <!-- END switch_no_bar -->
-                    <!-- BEGIN switch_vote -->
-                    <div class="vote-button"><a href="{postrow.displayed.switch_vote_active.switch_vote.U_VOTE_MINUS}">-</a></div>
-                    <!-- END switch_vote -->
-                </div>
-                <!-- END switch_vote_active -->
-                <div>
-                    <div>{postrow.displayed.MESSAGE}</div>
-                    <!-- BEGIN switch_attachments -->
-                    <dl class="attachbox">
-                        <dt>{postrow.displayed.switch_attachments.L_ATTACHMENTS}</dt>
-                        <dd>
-                            <!-- BEGIN switch_post_attachments -->
-                            <dl class="file">
-                                <dt>
-                                    <img src="{postrow.displayed.switch_attachments.switch_post_attachments.U_IMG}" alt="" />
-                                    <!-- BEGIN switch_dl_att -->
-                                    <a class="postlink" href="{postrow.displayed.switch_attachments.switch_post_attachments.switch_dl_att.U_ATTACHMENT}">{postrow.displayed.switch_attachments.switch_post_attachments.switch_dl_att.ATTACHMENT}</a> {postrow.displayed.switch_attachments.switch_post_attachments.switch_dl_att.ATTACHMENT_DEL}
-                                    <!-- END switch_dl_att -->
-                                    <!-- BEGIN switch_no_dl_att -->
-                                    {postrow.displayed.switch_attachments.switch_post_attachments.switch_no_dl_att.ATTACHMENT} {postrow.displayed.switch_attachments.switch_post_attachments.switch_no_dl_att.ATTACHMENT_DEL}
-                                    <!-- END switch_no_dl_att -->
-                                </dt>
-                                <!-- BEGIN switch_no_comment -->
-                                <dd><em>{postrow.displayed.switch_attachments.switch_post_attachments.switch_no_comment.ATTACHMENT_COMMENT}</em></dd>
-                                <!-- END switch_no_comment -->
-                                <!-- BEGIN switch_no_dl_att -->
-                                <dd><em><strong>{postrow.displayed.switch_attachments.switch_post_attachments.switch_no_dl_att.TEXT_NO_DL}</strong></em></dd>
-                                <!-- END switch_no_dl_att -->
-                                <dd>({postrow.displayed.switch_attachments.switch_post_attachments.FILE_SIZE}) {postrow.displayed.switch_attachments.switch_post_attachments.NB_DL}</dd>
-                            </dl>
-                            <!-- END switch_post_attachments -->
-                        </dd>
-                    </dl>
-                    <!-- END switch_attachments -->
-                    <div class="clear"></div>
-                </div>
-                <p>{postrow.displayed.EDITED_MESSAGE}</p>
-            </div>
-        </div>
- 
-        <!-- BEGIN switch_signature -->
-        <div class="sig-content">{postrow.displayed.SIGNATURE_NEW}</div>
-        <!-- END switch_signature -->
-    </div>
- 
-    <div class="ET_like">
-        <div class="postfoot">
-            <div class="user-contact profile_{postrow.displayed.PROFILE_POSITION}">
-                {postrow.displayed.PROFILE_IMG} {postrow.displayed.PM_IMG} {postrow.displayed.EMAIL_IMG}<!-- BEGIN contact_field --> {postrow.displayed.contact_field.CONTENT}<!-- END contact_field -->
-            </div>
-            <div class="post-options profile_{postrow.displayed.PROFILE_POSITION}">
-                {postrow.displayed.THANK_IMG} {postrow.displayed.MULTIQUOTE_IMG} {postrow.displayed.QUOTE_IMG} {postrow.displayed.EDIT_IMG} {postrow.displayed.DELETE_IMG} {postrow.displayed.IP_IMG} {postrow.displayed.REPORT_IMG}
-            </div>
-            <div style="clear:both;"></div>
-        </div>
-    </div>
-</div>
- 
-<!-- BEGIN first_post_br -->
-<div class="widget-box">
-    <div class="widget-body">
-        <div class="widget-main no-padding">
-            <div class="dialogs ace-scroll">
-                <div class="scroll-content">
 
-                    <div class="itemdiv dialogdiv">
-                        <div class="user">
-                            <a href="{postrow.displayed.U_POSTER_PROFILE}">
+<div class="forum-post-wrap">
+
+    <!-- Varianta pentru PRIMUL mesaj (stil blog) -->
+    <div class="blog_post only-first-post">
+        <div class="blog_post_info">
+            {postrow.displayed.POSTER_AVATAR}
+            Scris de <strong>{postrow.displayed.POSTER_NAME}</strong> in data de {postrow.displayed.POST_DATE_NEW}
+            <span style="float:right;">{postrow.displayed.IP_IMG}</span>
+        </div>
+        <div class="resize blogr">
+            <div>{postrow.displayed.MESSAGE}</div>
+            <p>{postrow.displayed.EDITED_MESSAGE}</p>
+        </div>
+        <div class="ET_like">
+            <div class="postfoot">
+                <div class="post-options">
+                    {postrow.displayed.THANK_IMG} {postrow.displayed.MULTIQUOTE_IMG} {postrow.displayed.QUOTE_IMG} {postrow.displayed.EDIT_IMG} {postrow.displayed.DELETE_IMG} {postrow.displayed.REPORT_IMG}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Varianta pentru RASPUNSURI (stil comentarii/chat) -->
+    <div class="widget-box only-reply-post">
+        <div class="widget-body">
+            <div class="widget-main no-padding">
+                <div class="dialogs ace-scroll">
+                    <div class="scroll-content">
+                        <div class="itemdiv dialogdiv">
+                            <div class="user">
                                 {postrow.displayed.POSTER_AVATAR}
-                            </a>
-                        </div>
-                        <div class="body">
-                            <div class="time">
-                                <i class="fa fa-calendar-o"></i>
-                                <span class="green">{postrow.displayed.POST_DATE_NEW}</span>
                             </div>
-                            <div class="name">
-                                <a href="{postrow.displayed.U_POSTER_PROFILE}">{postrow.displayed.POSTER_NAME}</a>
-                            </div>
-                            <div class="text">
-                                {postrow.displayed.MESSAGE}
-                            </div>
-                            <div class="tools">
-                                {postrow.displayed.EDIT_IMG} {postrow.displayed.DELETE_IMG} {postrow.displayed.IP_IMG}
+                            <div class="body">
+                                <div class="time">
+                                    <i class="fa fa-calendar-o"></i>
+                                    <span class="green">{postrow.displayed.POST_DATE_NEW}</span>
+                                </div>
+                                <div class="name">
+                                    <strong>{postrow.displayed.POSTER_NAME}</strong>
+                                </div>
+                                <div class="text">
+                                    {postrow.displayed.MESSAGE}
+                                </div>
+                                <div class="tools">
+                                    {postrow.displayed.EDIT_IMG} {postrow.displayed.DELETE_IMG} {postrow.displayed.IP_IMG} {postrow.displayed.QUOTE_IMG}
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
 </div>
+
+<!-- BEGIN switch_signature -->
+<div class="sig-content">{postrow.displayed.SIGNATURE_NEW}</div>
+<!-- END switch_signature -->
+
+<!-- BEGIN first_post_br -->
+</div>
+<hr id="first-post-br" />
+<div class="main-content topic">
 <!-- END first_post_br -->
 <!-- END displayed -->
 		<!-- END postrow -->
