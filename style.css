@@ -25,3 +25,27 @@
 .status img {
     display: none;
 }
+/* Prima postare: se vede varianta blog_post, se ascunde varianta comentarii */
+.forum-post-wrap:first-child .only-reply-post {
+    display: none !important;
+}
+
+/* Toate postarile de dupa prima: se vede varianta comentarii, se ascunde blog_post */
+.forum-post-wrap:not(:first-child) .only-first-post {
+    display: none !important;
+}
+
+/* Titlu "COMENTARIILE UTILIZATORILOR" - il afisam o singura data, doar inaintea
+   primei postari care NU e prima (adica inaintea primului raspuns) */
+.forum-post-wrap:nth-child(2) .widget-box.only-reply-post::before {
+    content: "\f086  COMENTARIILE UTILIZATORILOR";
+    font-family: "Open Sans", Arial, sans-serif, FontAwesome;
+    display: block;
+    background: #2d79da;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 4px 15px;
+    margin-bottom: 10px;
+}
