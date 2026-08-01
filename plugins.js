@@ -158,4 +158,3 @@ $(function() {
     $('.punbb-forum-software').attr('id', 'skin2');
     new getStaffPost()
 });
-}
