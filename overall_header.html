@@ -296,28 +296,82 @@
 
 <a id="top" name="top" accesskey="t"></a>
 
-<div class="minwidth_IE">
-	<div class="layout_IE">
-		<div class="container_IE">
-			<div class="pun">
-				<div id="pun-intro" class="clearfix">
-					<a href="{U_INDEX}" id="pun-logo"><img loading="lazy" src="{LOGO}" alt="{L_INDEX}"/></a>
 
-					<!-- BEGIN switch_h1 -->
-					<div id="pun-title">{switch_h1.MAIN_SITENAME}</div>
-					<!-- END switch_h1 -->
+<div class="drop-down-menu">
+  <ul class="sky-mega-menu sky-mega-menu-response-to-stack sky-mega-menu-anim-slide">
 
-					<!-- BEGIN switch_desc -->
-					<p id="pun-desc">{switch_desc.SITE_DESCRIPTION}</p>
-					<!-- END switch_desc -->
-				</div>
-				<div id="pun-head">
-					<div id="pun-navlinks">
-						<ul class="clearfix">
-							<li>{GENERATED_NAV_BAR}</li>
-						</ul>
-					</div>
-				</div>
+    <li>
+      <a href="/"><i class="fa fa-home"></i>Home page</a>
+    </li>
+
+    <li>
+      <a href="/c2-tutoriale-si-ponturi"><i class="fa fa-database"></i>Tutorials</a>
+      <div class="grid-container3">
+        <ul>
+          <li><a href="/f7-sisteme-de-operare"><i class="fa fa-windows"></i>Software</a></li>
+          <li><a href="/f54-limbaje-de-programare"><i class="fa fa-codepen"></i>Programming languages</a></li>
+          <li><a href="/f11-componente-hardwaree"><i class="fa fa-hdd-o"></i>Hardware</a></li>
+          <li><a href="/f15-photoshop-si-design"><i class="fa fa-object-group"></i>Adobe Photoshop</a></li>
+          <li><a href="/f2-optimizare-website-seo"><i class="fa fa-globe"></i>SEO optimization</a></li>
+          <li><a href="/f6-jocuri-console"><i class="fa fa-gamepad"></i>PC/Console Games</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <a href="#"><i class="fa fa-check-circle"></i>Services</a>
+      <div class="grid-container3">
+        <ul>
+          <li><a href="/f53-sabloane-pagini-html"><i class="fa fa-html5"></i>Templates (HTML pages)</a></li>
+          <li><a href="/f32-stilurile-platformei"><i class="fa fa-magic"></i>Platform styles</a></li>
+          <li><a href="/f25-creatii-grafice"><i class="fa fa-gift"></i>Graphic creations</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="right">
+      <a href="/register"><i class="fa fa-user-plus"></i>Cont nou</a>
+    </li>
+
+    <li class="right">
+      <a href="/login"><i class="fa fa-sign-in"></i>Conectare</a>
+      <div class="grid-container4">
+        <form action="/login" method="post">
+          <fieldset>
+            <section>
+              <label class="input">
+                <i class="fa fa-append fa-user"></i>
+                <input type="text" tabindex="1" name="username" id="username" placeholder="Nume de utilizator">
+              </label>
+            </section>
+            <section>
+              <label class="input">
+                <i class="fa fa-append fa-lock"></i>
+                <input type="password" tabindex="2" name="password" id="password" placeholder="Parola ta">
+              </label>
+            </section>
+            <a href="/profile?mode=sendpassword" class="resetpass">Ti-ai uitat parola?</a>
+            <button type="submit" class="button" tabindex="6" name="login">Conectare</button>
+            <input type="checkbox" style="visibility:hidden;position:absolute" name="autologin" id="autologin" tabindex="4" class="checkbox" checked>
+          </fieldset>
+        </form>
+      </div>
+    </li>
+
+    <li class="right search">
+      <form method="get" action="/search?search_where=11">
+        <div class="input">
+          <button type="submit" class="button"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Cautare..." name="search_keywords">
+        </div>
+      </form>
+    </li>
+
+  </ul>
+</div>
+
+</body>
+</html>
 
 				<!-- BEGIN switch_ticker_new -->
 				<div id="fa_ticker_block" style="padding-top:4px;">
