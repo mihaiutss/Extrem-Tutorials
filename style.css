@@ -2,8 +2,8 @@
 .blog_post .ET_like a[id*="like-post-"] {display: none;}
 .punbb-forum-software{overflow-x:hidden;}
 .logo-forum{background:url(https://i.imgur.com/GtPvrHH.png) no-repeat;padding:35px 0px;background-position:0px -5px;width:450px;max-width:100%;background-size:100%;}
-ul.ipsType_small > li:before{content:"";padding:5px;background:url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/all_images_2.png);background-position:-124px -250px;}
-ul.ipsType_small > li.new:before{content:"";padding:5px;background:url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/all_images_2.png);background-position:-124px -272px;}
+ul.ipsType_small > li:before{content:"";padding:5px;background:url(https://i.imgur.com/GtPvrHH.png);background-position:-124px -250px;}
+ul.ipsType_small > li.new:before{content:"";padding:5px;background:url(https://i.imgur.com/GtPvrHH.png);background-position:-124px -272px;}
 .ico-money{background:url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/all_images_2.png);padding:12px 15px;float:left;background-position:-177px -179px;}
 .ico-cat{width:32px;height:32px;background:url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/all_images_2.png) no-repeat;float:left;margin-right:10px}
 .ico-cat.noutati{background-position:-60px -243px;}
