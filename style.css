@@ -4,8 +4,8 @@
 .logo-forum{background:url(https://i.imgur.com/GtPvrHH.png) no-repeat;padding:35px 0px;background-position:0px -5px;width:450px;max-width:100%;background-size:100%;}
 ul.ipsType_small > li:before{content:"";padding:5px;background:url(https://i.imgur.com/GtPvrHH.png);background-position:-124px -250px;}
 ul.ipsType_small > li.new:before{content:"";padding:5px;background:url(https://i.imgur.com/GtPvrHH.png);background-position:-124px -272px;}
-.ico-money{background:url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/all_images_2.png);padding:12px 15px;float:left;background-position:-177px -179px;}
-.ico-cat{width:32px;height:32px;background:url(/web/20171105082732im_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/img/all_images_2.png) no-repeat;float:left;margin-right:10px}
+.ico-money{background:url(https://i.imgur.com/GtPvrHH.png);padding:12px 15px;float:left;background-position:-177px -179px;}
+.ico-cat{width:32px;height:32px;background:url(https://i.imgur.com/GtPvrHH.png) no-repeat;float:left;margin-right:10px}
 .ico-cat.noutati{background-position:-60px -243px;}
 .ico-cat.prezentare{background-position:-55px -294px;}
 .ico-cat.propuneri{background-position:-117px -176px;}
@@ -3147,16 +3147,16 @@ li.unread{font-weight:700}
 .sceditor-container textarea{font-family:"Open Sans", Arial, sans-serif!important}
 .sceditor-button-faspoiler,
 .sceditor-button-source{display:none!important}
-.sceditor-button-image div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/add10.png)!important}
-.sceditor-button-flash div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/script10.png)!important}
-.sceditor-button-servimg div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/applic10.png)!important}
-.sceditor-button-fahide div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/fahide10.png)!important}
-.sceditor-button-dailymotion div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/dailym10.png)!important}
-.sceditor-button-youtube div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/youtub10.png)!important}
-.sceditor-button-more div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/dotdot10.png)!important}
-.sceditor-button-fascroll div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/scroll10.png)!important}
-.sceditor-button-fawow div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/wow10.png)!important}
-.sceditor-button-farand div{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/rand10.png)!important}
+.sceditor-button-image div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/add10.png)!important}
+.sceditor-button-flash div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/script10.png)!important}
+.sceditor-button-servimg div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/applic10.png)!important}
+.sceditor-button-fahide div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/fahide10.png)!important}
+.sceditor-button-dailymotion div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/dailym10.png)!important}
+.sceditor-button-youtube div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/youtub10.png)!important}
+.sceditor-button-more div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/dotdot10.png)!important}
+.sceditor-button-fascroll div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/scroll10.png)!important}
+.sceditor-button-fawow div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/wow10.png)!important}
+.sceditor-button-farand div{background:url(https://i39.servimg.com/u/f39/18/74/45/05/rand10.png)!important}
 .stil-actual{float:right;border:1px solid #C5D5F1;border-top:0!important;padding:2px 5px;border-radius:0 0 5px 5px;margin-right:5px;background:#fff;margin-top:-3px;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;font-family:"Open Sans", Arial, sans-serif;font-weight:700}
 #editor_skin1 .sceditor-toolbar .sceditor-group,
 #editor_skin3 .sceditor-toolbar .sceditor-group,
@@ -3164,23 +3164,23 @@ li.unread{font-weight:700}
 #editor_skin5 .sceditor-toolbar .sceditor-group{background:none!important;border-bottom:0!important}
 #editor_skin1,
 #editor_skin1 div.sceditor-toolbar{border-color:#adadad!important}
-#editor_skin1 .sceditor-toolbar{background:#CCC url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/editor10.png)!important;background-repeat:repeat-x}
+#editor_skin1 .sceditor-toolbar{background:#CCC url(https://i39.servimg.com/u/f39/18/74/45/05/editor10.png)!important;background-repeat:repeat-x}
 #editor_skin1 .sceditor-toolbar .sceditor-group a{border-radius:30px!important;box-shadow:0 0 0 #fff}
 #editor_skin1 .sceditor-toolbar .sceditor-group a:active{box-shadow:inset 1px 1px 3px #adadad}
-#editor_skin2 .sceditor-toolbar{background:#c0d8ef url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/bg12.png)!important;background-repeat:repeat-x}
+#editor_skin2 .sceditor-toolbar{background:#c0d8ef url(https://i39.servimg.com/u/f39/18/74/45/05/bg12.png)!important;background-repeat:repeat-x}
 #editor_skin2,
 #editor_skin2 div.sceditor-toolbar{border-color:#8DB2E3!important}
 #editor_skin2 .sceditor-toolbar .sceditor-group a{border:0!important}
 #editor_skin2 .sceditor-toolbar .sceditor-group a:hover,
-#editor_skin2 .hover{background:#ffe47f url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/stile10.png);background-repeat:repeat-x!important;border:0!important;border-radius:0!important;box-shadow:0 0 0!important}
-#editor_skin2 .sceditor-toolbar .sceditor-group{background:#cbddf3 url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/bg14.png)!important;background-repeat:repeat-x!important;padding:0!important;box-shadow:inset 1px 1px 1px #c0d8ef!important;border:1px solid #8DB2E3!important}
+#editor_skin2 .hover{background:#ffe47f url(https://i39.servimg.com/u/f39/18/74/45/05/stile10.png);background-repeat:repeat-x!important;border:0!important;border-radius:0!important;box-shadow:0 0 0!important}
+#editor_skin2 .sceditor-toolbar .sceditor-group{background:#cbddf3 url(https://i39.servimg.com/u/f39/18/74/45/05/bg14.png)!important;background-repeat:repeat-x!important;padding:0!important;box-shadow:inset 1px 1px 1px #c0d8ef!important;border:1px solid #8DB2E3!important}
 #editor_skin2 .sceditor-toolbar .sceditor-group a:last-child{border-radius:0 3px 3px 0!important}
 #editor_skin2 .sceditor-toolbar .sceditor-group a:first-child{border-radius:3px 0 0 3px!important}
 #editor_skin2 .sceditor-change-style a{background:transparent!important}
-#editor_skin3 .sceditor-toolbar{background:#dcdcdc url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/gradie10.png)!important;background-repeat:repeat-x!important}
+#editor_skin3 .sceditor-toolbar{background:#dcdcdc url(https://i39.servimg.com/u/f39/18/74/45/05/gradie10.png)!important;background-repeat:repeat-x!important}
 #editor_skin3 .sceditor-toolbar .sceditor-group a{border-radius:0!important}
 #editor_skin3{border-color:#adadad!important}
-#editor_skin4 .sceditor-toolbar{background:#030303 url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/bg15.png)!important;background-repeat:repeat-x!important;color:#fff!important}
+#editor_skin4 .sceditor-toolbar{background:#030303 url(https://i39.servimg.com/u/f39/18/74/45/05/bg15.png)!important;background-repeat:repeat-x!important;color:#fff!important}
 #editor_skin4 .sceditor-toolbar .sceditor-group a{border-radius:0!important}
 #editor_skin4,
 #editor_skin4 div.sceditor-toolbar{border-color:#333!important}
@@ -3196,17 +3196,17 @@ li.unread{font-weight:700}
 #editor_skin4 fieldset.fields1 div{margin-bottom:0!important}
 #editor_skin4 .sceditor-dropdown li:hover,
 #editor_skin4 .sceditor-dropdown a{background:#000;border:0!important}
-#editor_skin4 .sceditor-button div{background-image:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/black10.png)}
+#editor_skin4 .sceditor-button div{background-image:url(https://i39.servimg.com/u/f39/18/74/45/05/black10.png)}
 #editor_skin4 .sceditor-change-style a{background:transparent!important;color:#fff}
 #editor_skin2 + .stil-actual{border-color:#8DB2E3!important}
 #editor_skin3 + .stil-actual,
 #editor_skin1 + .stil-actual{border-color:#adadad!important}
 #editor_skin4 + .stil-actual{background:#111!important;color:#fff!important;background:#000!important}
-#editor_skin5 + .stil-actual{background:#3097b5 url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/bg16.png)!important;background-repeat:repeat-x!important;color:#fff;border-color:#0c718e!important}
-#editor_skin1 .sceditor-toolbar{background:#CCC url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/editor10.png)!important;background-repeat:repeat-x}
+#editor_skin5 + .stil-actual{background:#3097b5 url(https://i39.servimg.com/u/f39/18/74/45/05/bg16.png)!important;background-repeat:repeat-x!important;color:#fff;border-color:#0c718e!important}
+#editor_skin1 .sceditor-toolbar{background:#CCC url(https://i39.servimg.com/u/f39/18/74/45/05/editor10.png)!important;background-repeat:repeat-x}
 #editor_skin5 .sceditor-toolbar .sceditor-group a{border-radius:30px!important;box-shadow:0 0 0 #fff}
 #editor_skin5 .sceditor-toolbar .sceditor-group a:active{box-shadow:inset 1px 1px 3px #adadad}
-#editor_skin5 .sceditor-toolbar{background:#3097b5 url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/18/74/45/05/bg16.png)!important;background-repeat:repeat-x!important}
+#editor_skin5 .sceditor-toolbar{background:#3097b5 url(https://i39.servimg.com/u/f39/18/74/45/05/bg16.png)!important;background-repeat:repeat-x!important}
 #editor_skin5,
 #editor_skin5 div.sceditor-toolbar{border-color:#0c718e!important}
 #editor_skin4 textarea{background:#000!important}
@@ -3238,7 +3238,7 @@ i:before{margin:0!important}
 #loading p{width:400px;margin:0 auto;font-size:29px;color:#fff;font-weight:700;margin-top:20%}
 .style-changer i:before{margin:0}
 .date{float:left;color:#fff!important;margin-left:15px;margin-top:3px}
-.morning{background:url(https://web.archive.org/web/20171105082732im_/http://i39.servimg.com/u/f39/15/42/26/78/noise10.png)}
+.morning{background:url(https://i39.servimg.com/u/f39/15/42/26/78/noise10.png)}
 ul,
 ol{margin:0!important}
 ul{list-style:none outside}
