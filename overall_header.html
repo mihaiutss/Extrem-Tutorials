@@ -305,7 +305,7 @@
            <!-- Header -->
            <div id="header">
              <!-- Logo -->
-             <a href="/web/20171230233632/http://www.extrem-tutorials.com/">
+             <a href="https://allprojects.forumotion.com">
                <div class="logo-forum"></div>
              </a>
              <div style="clear:both;"></div>
@@ -336,6 +336,7 @@
             </ul>
         </div>
         </li>
+      <!-- BEGIN switch_user_logged_out -->
         <li class="right"><a href="/register"><i class="fa fa-user-plus"></i>Cont nou</a></li>
         <li class="right"><a href="/login"><i class="fa fa-sign-in"></i>Conectare </a>
         <div class="grid-container4">
@@ -347,12 +348,34 @@
                 </form>
             </div>
             </li>
+      <!-- END switch_user_logged_out -->
+      <li class="right profile custom-profile">
+        <!-- BEGIN switch_user_logged_in -->
+        <a href="/profile?mode=editprofile"><i class="fa fa-cog"></i>Editare Profil</a>
+        <!-- END switch_user_logged_in -->
+        <div class="grid-container3">
+          <ul>
+            <li><a href="/privmsg?folder=inbox"><i class="fa fa-envelope"></i>Mesaje Private</a></li>
+            <li><a href="/login?logout=1"><i class="fa fa-sign-out"></i>Deconectare</a></li>
+                </ul>
+             </div>
+            </li>
             <li class="right search">
             <form method="get" action="/search?search_where=11"><div class="input"><button type="submit" class="button"><i class="fa fa-search"></i></button><input type="text" placeholder="Cautare..." name="search_keywords"/></div>
         </form>
         </li>
         <li class="right fixed-on" style="display: none;"><a href="#close"><i class="fa fa-single fa-times"></i></a></li>
     </ul>
+</div>
+<!--
+/ mega menu -->
+<div class="clear"></div>
+<div class="no-radius alert alert-success maintenance-mode" style="display: block;"> <span class="label label-success">Mentenanta</span> In prezent se efectueaza lucrari de mentenanta la acest forum, ca urmare exista posibilitatea ca anumite facilitati experimentale sa fie nefunctionale. Va recomandam sa apasati din cand in cand pe tasta
+    F5 pentru a curata cache-ul stocat, prin disparitia acestei notificari se subintelege ca lucrarile s-au incheiat cu succes. <span class="fa fa-smile-o"></span> </div>
+<noscript>
+    <div class="no-radius alert alert-warning"><span class="label label-warning">Informare</span> A fost detectata o problema, browser-ul dumneavoastra web nu suporta javascript, ca urmare navigarea pe acest forum este limitata. Va rugam sa activati javascript pentru a putea beneficia de toate
+        facilitatile acestui forum.</div>
+</noscript>
 </div>
 
 				<!-- BEGIN switch_ticker_new -->
@@ -390,22 +413,69 @@
 				</div>
 				<!-- END switch_ticker -->
 
-				<div id="page-body">
-					<div id="{ID_CONTENT_CONTAINER}"{CLASS_CONTENT_CONTAINER}>
-						<div id="outer-wrapper">
-							<div id="wrapper">
-								<div id="container">
-									<div id="content">
-										<div id="{ID_LEFT}">
-											<!-- BEGIN giefmod_index1 -->
-											{giefmod_index1.MODVAR}
-											<!-- BEGIN saut -->
-											<div style="height:{SPACE_ROW}px"></div>
-											<!-- END saut -->
-											<!-- END giefmod_index1 -->
-										</div>
-										<div id="main">
-											<div id="main-content">
+<div id="page-body">
+<div id="content-container">
+<div id="clear-board">
+<div id="extrem-tutorials">
+<div id="container">
+<div id="content">
+ 
+<div id="left">
+ 
+    <div class="developer-mode" style="display: none">
+        <div class="headline-page"><span class="que que-small"><i class="fa fa-desktop"></i> Optiuni experimentale</span></div>
+        <ul class="forum-options-etc">
+            <li class="forum-options option-1">Foloseste AJAX in formulare ori de cate ori este posibil
+                <span class="button button-option-1">
+                    <i class="fa fa-icon-option-off fa-toggle-off"></i>
+                    <i class="fa fa-icon-option-on fa-toggle-on" style="display: none;"></i>
+                </span>
+            </li>
+        </ul>
+    </div>
+ 
+    <br/>
+    <div class="headline-page"><span class="que que-small">Navigare rapidă</span></div>
+    <ul class="sky-mega-menu sky-mega-menu-pos-right sky-mega-menu-anim-scale sky-mega-menu-response-to-switcher">
+        <li class="switcher"><a href="#"><i class="fa fa-bars"></i>Menu</a></li>
+        <li><a href="/h13-"><i class="fa fa-exclamation-triangle"></i> Regulament</a></li>
+        <li><a href="/faq"><i class="fa fa-info-circle"></i> Documentatia forumului</a></li>
+        <li><a href="/memberlist"><i class="fa fa-users"></i> Utilizatori</a></li>
+        <li><a href="/viewonline"><i class="fa fa-question-circle"></i> Cine este online?</a></li>
+    </ul>
+    <br/>
+ 
+    <div style="height:1px"></div>
+    <div class="module main">
+        <div class="headline-page"><span class="que que-small"><i class="fa fa-comments-o"></i> Ultimele subiecte</span></div>
+        <div class="main-content recent-topics">
+            <div class="main-content recent-topics">
+<!-- BEGIN scrolling_row -->
+<!-- BEGIN recent_topic_row -->
+<div class="eq">
+&raquo;&nbsp;<a href="{scrolling_row.recent_topic_row.U_TITLE}" title="{scrolling_row.recent_topic_row.L_TITLE}">{scrolling_row.recent_topic_row.L_TOPIC_TITLE}</a><br />
+<!-- BEGIN switch_poster -->
+Scris de&nbsp;<a href="{scrolling_row.recent_topic_row.switch_poster.U_POSTER}">{scrolling_row.recent_topic_row.switch_poster.S_POSTER}</a> {scrolling_row.recent_topic_row.S_POSTTIME}
+<!-- END switch_poster -->
+<!-- BEGIN switch_poster_guest -->
+Scris de&nbsp;{scrolling_row.recent_topic_row.switch_poster_guest.S_POSTER} {scrolling_row.recent_topic_row.S_POSTTIME}
+<!-- END switch_poster_guest -->
+</div>
+<!-- END recent_topic_row -->
+<!-- END scrolling_row -->
+</div>
+        </div>
+    </div>
+ 
+    <div style="height:1px"></div>
+    <div class="headline-page"><span class="que que-small"><i class="fa fa-tags"></i> Cuvinte-cheie</span></div>
+    <p class="center"><!-- aici vor veni cuvintele-cheie --></p>
+    <div style="height:1px"></div>
+ 
+</div>
+ 
+<div id="main">
+<div id="main-content">
 
 												<!-- BEGIN html_validation -->
 											</div>
