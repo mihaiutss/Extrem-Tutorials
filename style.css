@@ -1622,7 +1622,7 @@
   border-top : 8px solid #f97d19;
   border-top : 8px solid rgba(248, 111, 0, 0.9);
 }
-  .qlabs_tooltip_style_39 > span : before {
+.qlabs_tooltip_style_39 > span : before {
   content : "";
   display : block;
   position : absolute;
@@ -8823,7 +8823,7 @@ body {
   padding-right : 10px;
 }
 #footer {
-  background : #2d79da url(/web/20171105082732im_/https : //147.ip-51-255-166.eu/red_cdn/extremtuts/img/texture.png) repeat scroll 50% 100%;
+  background : #2d79da url(https://i.imgur.com/MeABQfg.png) repeat scroll 50% 100%;
   color : #fff;
   margin : 0 auto;
 }
@@ -12668,7 +12668,7 @@ body {
   font : normal normal normal 14px/1 FontAwesome!important;
 }
 .header-bf {
-  background : #2d79da url(/web/20171105082732im_/https : //147.ip-51-255-166.eu/red_cdn/extremtuts/img/texture.png) repeat scroll 50% 100%;
+  background : #2d79da url(https://i.imgur.com/MeABQfg.png) repeat scroll 50% 100%;
 }
 .buton.active span {
   -webkit-transform : translateY(-111px);-moz-transform : translateY(-111px);-o-transform : translateY(-111px);
