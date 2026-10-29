@@ -8,7 +8,7 @@
   overflow-x : hidden;
 }
 .logo-forum {
-  background : url(https : //i.imgur.com/GtPvrHH.png) no-repeat;
+  background : url(https://i.imgur.com/GtPvrHH.png) no-repeat;
   padding : 35px 0px;
   background-position : 0px -5px;
   width : 450px;
@@ -18,17 +18,17 @@
   ul.ipsType_small > li : before {
   content : "";
   padding : 5px;
-  background : url(https : //i.imgur.com/GtPvrHH.png);
+  background : url(https://i.imgur.com/GtPvrHH.png);
   background-position : -124px -250px;
 }
   ul.ipsType_small > li.new : before {
   content : "";
   padding : 5px;
-  background : url(https : //i.imgur.com/GtPvrHH.png);
+  background : url(https://i.imgur.com/GtPvrHH.png);
   background-position : -124px -272px;
 }
 .ico-money {
-  background : url(https : //i.imgur.com/GtPvrHH.png);
+  background : url(https://i.imgur.com/GtPvrHH.png);
   padding : 12px 15px;
   float : left;
   background-position : -177px -179px;
@@ -36,7 +36,7 @@
 .ico-cat {
   width : 32px;
   height : 32px;
-  background : url(https : //i.imgur.com/GtPvrHH.png) no-repeat;
+  background : url(https://i.imgur.com/GtPvrHH.png) no-repeat;
   float : left;
   margin-right : 10px
 }
