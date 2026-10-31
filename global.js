@@ -144,4 +144,3 @@ $(function () {
 
 $(function(){$(".total_users").each(function(){var a=[];a[0]=$(this).text().match(/\d+/g)[0];a[1]=$(this).text().match(/\d+/g)[1];a[2]=$(this).text().match(/\d+/g)[2];a[3]=$(this).text().match(/\d+/g)[3];a[4]=$(this).text().match(/\d+/g)[4];a[4]||parseInt(a[4])?(a[6]=parseInt(a[0])+parseInt(a[4]),a[7]=parseInt(a[1])+parseInt(a[4]),a[5]="In total sunt <strong>"+a[6]+"</strong> utilizatori conectati: "+a[7]+" Inregistrati, "+a[2]+" Invizibil si "+a[3]+" Vizitatori <br />"):a[5]="In total sunt <strong>"+
 a[0]+"</strong> utilizatori conectati: "+a[1]+" Inregistrati, "+a[2]+" Invizibil si "+a[3]+" Vizitatori <br />";$(this).replaceWith(a[5])})});
-}
