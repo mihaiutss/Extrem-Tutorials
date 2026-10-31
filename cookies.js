@@ -123,4 +123,3 @@ jQuery(function(a) {
         ssyt_setcookie("et_ajx_active", "0")
     })
 });
-}
