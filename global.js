@@ -42,7 +42,7 @@ $(document).ready(function() {
         function n() {
             my_getcookie("schimbare_stil_editor") ? (soskin = my_getcookie("schimbare_stil_editor"), "none" == soskin ? (jQuery(".punbb-forum-software .sceditor-container").attr("id", ""), jQuery(".punbb-forum-software .stil-actual").html("" + f + " v" + d + " (" + u + ")")) : "1" == soskin ? (jQuery(".punbb-forum-software .sceditor-container").attr("id", "editor_skin1"), jQuery(".punbb-forum-software .stil-actual").html("" + f + " v" + d + " (" + s + ")")) : "2" == soskin ? (jQuery(".punbb-forum-software .sceditor-container").attr("id", "editor_skin2"), jQuery(".punbb-forum-software .stil-actual").html("" + f + " v" + d + " (" + a + ")")) : "3" == soskin ? (jQuery(".punbb-forum-software .sceditor-container").attr("id", "editor_skin3"), jQuery(".punbb-forum-software .stil-actual").html("Ã?ÂŠ ET_SCEditor (" + c + ")")) : "4" == soskin ? (jQuery(".punbb-forum-software .sceditor-container").attr("id", "editor_skin4"), jQuery(".punbb-forum-software .stil-actual").html("" + f + " v" + d + " (" + r + ")")) : "5" == soskin && (jQuery(".punbb-forum-software .sceditor-container").attr("id", "editor_skin5"), jQuery(".punbb-forum-software .stil-actual").html("" + f + " v" + d + " (" + l + ")"))) : (editor_skin = 1 + Math.floor("+ durata_cookie +" * Math.random()), 1 == editor_skin && t(1), 2 == editor_skin && t(2), 3 == editor_skin && t(3), 4 == editor_skin && t(4), 5 == editor_skin && t(5))
         }
-        var o = "https://web.archive.org/web/20171105081231/http://i39.servimg.com/u/f39/18/74/45/05/color_10.png",
+        var o = "https://i39.servimg.com/u/f39/18/74/45/05/color_10.png",
             e = "Selecteaza stilul dorit",
             s = "Stil modern",
             a = "Stil office",
@@ -72,7 +72,7 @@ $(document).ready(function() {
         }), $(".reset").click(function() {
             i()
         }), $(".punbb-forum-software .sceditor-button-servimg").click(function() {
-            $(".punbb-forum-software .sceditor-servimg").html('<iframe id="obj_servimg" src="https://web.archive.org/web/20171105081231/http://www.servimg.com/forum_upload.php?account=' + k + '&id=9c12de6c4558d9d5bf1ac81c520f3ba4&f=11117201" width="' + b + '" height="' + m + '" border="0" scrolling="no" frameborder="0"></iframe>')
+            $(".punbb-forum-software .sceditor-servimg").html('<iframe id="obj_servimg" src="https://www.servimg.com/forum_upload.php?account=' + k + '&id=9c12de6c4558d9d5bf1ac81c520f3ba4&f=11117201" width="' + b + '" height="' + m + '" border="0" scrolling="no" frameborder="0"></iframe>')
         }))
     })
 }), $(function() {
@@ -90,7 +90,7 @@ Plugins and codes !
 */
 
 /* Only developers */
-document.write('<script src="https://web.archive.org/web/20171105081231/https://147.ip-51-255-166.eu/red_cdn/extremtuts/js/cookies.js" type="text/javascript" async="true"></script>');
+document.write('<script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@master/cookies.js" type="text/javascript" async="true"></script>');
 
 /* Members, admins and moderators file ! */
 jQuery(function(){1!=_userdata.session_logged_in&&1!=_userdata.user_level&&2!=_userdata.user_level&&$('a[href*="&mode=delete"], a[href*="&mode=editpost"').remove()});
@@ -136,7 +136,7 @@ function ohSnapX(element) {
 }
 
 $(function () {
-	var d = $('a[href="/privmsg?folder=inbox"]').attr('alt').match(/\d+/g);
+	var d = $('a[href="/privmsg?folder=inbox"]');
 	if($('a[href="/privmsg?folder=inbox"]').attr('alt') === ""+ d +" mesaj nou" || $('a[href="/privmsg?folder=inbox"]').attr('alt') === ""+ d +" mesaje noi") {
 		et_notification('Salut '+ _userdata.username +', ai '+ d +' mesaje private necitite ! Verificati inbox-ul de pe forum', 'blue', 10000);
 	}
