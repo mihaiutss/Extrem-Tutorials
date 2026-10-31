@@ -77,7 +77,7 @@ $(function() {
         x = $('#extrem-tutorials .recent-topics .eq');
     for (i; i < x.length; i++) {
         link = $('a[href^="/u"]', x[i]).attr('href');
-        $(x[i]).prepend('<a href="' + link + '" class="lastpost-avatar"><img src="https://web.archive.org/web/20171103155953/http://i32.servimg.com/u/f32/15/42/26/78/th/oaspet11.png" /></a>')
+        $(x[i]).prepend('<a href="' + link + '" class="lastpost-avatar"><img src="https://i32.servimg.com/u/f32/15/42/26/78/th/oaspet11.png" /></a>')
     }
     var t = $('#extrem-tutorials .recent-topics .eq').length;
     for (z = 0; z < t; z++) {
@@ -102,7 +102,7 @@ $(function() {
             var form = $('form[action="/post"]'),
                 datax = [];
             datax['username'] = _userdata.username;
-            datax['topic_image'] = 'https://web.archive.org/web/20171103155953/http://i39.servimg.com/u/f39/15/42/26/78/import10.png';
+            datax['topic_image'] = 'https://i39.servimg.com/u/f39/15/42/26/78/import10.png';
             datax['topic_content'] = $('.sceditor-container textarea', form).val();
             datax['topic_title'] = $('input[name="subject"]', form).val();
             datax['topic_url'] = "";
@@ -120,7 +120,7 @@ $(function() {
                     datax['topic_url'] = $(t).find("#main-content .no-radius.alert-info a:first").attr('href');
                     datax['data'] = "&topic_image=" + datax.topic_image + "&content=" + $('.sceditor-container textarea').val() + "&topic_title=" + datax.topic_title + "&author=" + datax.author + "&topic_url=" + datax.topic_url;
                     $.ajax({
-                        url: "https://web.archive.org/web/20171103155953/http://cdn.openpro.ro/extremtutorials/modules/inc/news_blog.php",
+                        url: "https://cdn.openpro.ro/extremtutorials/modules/inc/news_blog.php",
                         type: "post",
                         data: datax.data,
                         beforeSend: function() {
