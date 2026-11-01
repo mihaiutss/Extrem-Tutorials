@@ -95,51 +95,6 @@ $(function() {
         } else console.log("Not detected !")
     }
 });
-$(function() {
-    if ("?f=1&mode=newtopic" == location.search) {
-        $('input[name="post"]').click(function(e) {
-            e.preventDefault();
-            var form = $('form[action="/post"]'),
-                datax = [];
-            datax['username'] = _userdata.username;
-            datax['topic_image'] = 'https://i39.servimg.com/u/f39/15/42/26/78/import10.png';
-            datax['topic_content'] = $('.sceditor-container textarea', form).val();
-            datax['topic_title'] = $('input[name="subject"]', form).val();
-            datax['topic_url'] = "";
-            if (datax.username !== "Zeus" || datax.username !== "SSYT") datax['author'] = "Zeus" ? "Zeus" : "SSYT";
-            else datax['author'] = datax.username;
-            $.post("/post", {
-                mode: "newtopic",
-                f: "1",
-                subject: $('input[name="subject"]', form).val(),
-                message: $('.sceditor-container textarea').val(),
-                post: "Ok"
-            }, function(t) {
-                if ($(t).find("#main-content .no-radius.alert-info a:first").attr('href').length > 1) {
-                    console.log($(t).find("#main-content .no-radius.alert-info a:first").attr('href'));
-                    datax['topic_url'] = $(t).find("#main-content .no-radius.alert-info a:first").attr('href');
-                    datax['data'] = "&topic_image=" + datax.topic_image + "&content=" + $('.sceditor-container textarea').val() + "&topic_title=" + datax.topic_title + "&author=" + datax.author + "&topic_url=" + datax.topic_url;
-                    $.ajax({
-                        url: "https://cdn.openpro.ro/extremtutorials/modules/inc/news_blog.php",
-                        type: "post",
-                        data: datax.data,
-                        beforeSend: function() {
-                            $("body").before('Se incarca...')
-                        },
-                        complete: function(r) {
-                            console.log(r.responseText);
-                            if (r.responseText == "Inserted") {
-                                setTimeout(function() {
-                                    location.href = datax.topic_url
-                                }, 2000)
-                            }
-                        }
-                    })
-                }
-            })
-        })
-    }
-});
 function getStaffPost() {
     $('.main-content.topic .table tr').each(function() {
         var x = $('td:has(".subiect") div', this).attr('id');
