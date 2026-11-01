@@ -20,15 +20,6 @@
 .profil-head .profil-avatar img{width:80px;height:80px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px #C5D5F1;object-fit:cover}
 .profil-head .profil-info{overflow:hidden;font-size:12px;color:#555}
 .profil-head .profil-info div{margin-bottom:4px}
-.profil-tabs > .sky-tab-content-1:checked ~ ul > .sky-tab-content-1,
-.profil-tabs > .sky-tab-content-2:checked ~ ul > .sky-tab-content-2{position:relative}
-.profil-tabs h2.profil-titlu{font-size:30px;font-weight:400;margin:0 0 10px}
-.profil-table{width:100%;border:1px solid #C5D5F1;box-shadow:0 1px 3px rgba(0,0,0,.1);background:#fff;margin:0 0 20px}
-.profil-table td{padding:10px;vertical-align:top;border-top:1px solid #C5D5F1;font-size:13px}
-.profil-table tr:first-child td{border-top:0}
-.profil-table td.profil-label{width:40%}
-.profil-table tr:nth-child(odd) td{background:#EAEEF8}
-.profil-table tr:nth-child(even) td{background:#FAFBFD}
 </style>
 
 <div class="main">
@@ -53,7 +44,7 @@
 		</div>
 	</div>
 
-	<div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons sky-tabs-anim-scale fffx profil-tabs">
+	<div class="sky-tabs sky-tabs-pos-top-left sky-tabs-anim-flip sky-tabs-response-to-icons">
 		<input checked class="sky-tab-content-1" id="profil-tab1" name="profil-tabs" type="radio"/>
 		<label for="profil-tab1">
 			<span class="samd">
@@ -64,36 +55,39 @@
 		<input class="sky-tab-content-2" id="profil-tab2" name="profil-tabs" type="radio"/>
 		<label for="profil-tab2">
 			<span class="samd">
-				<span><i class="fa fa-info-circle"></i>Contact</span>
+				<span><i class="fa fa-info-circle"></i>{L_CONTACT}</span>
 			</span>
 		</label>
 
 		<ul class="tabel-stats1">
 			<li class="sky-tab-content-1">
-				<h2 class="profil-titlu">Profil</h2>
-				<table class="profil-table" cellspacing="0">
-					<tbody>
-						<!-- BEGIN profile_field -->
-						<tr id="field_id{profile_field.ID}">
-							<td class="profil-label">{profile_field.LABEL}</td>
-							<td>{profile_field.CONTENT}<!-- BEGIN profil_type_user_posts --> [{POST_PERCENT_STATS} / {POST_DAY_STATS}]
-								<br /><a rel="nofollow" href="/st/{PUSERNAME}">{L_SEARCH_USER_POSTS} :</a>
-								<br />&nbsp;- <a rel="nofollow" href="/sta/{PUSERNAME}">{L_TOPICS}</a>
-								<br />&nbsp;- <a rel="nofollow" href="/spa/{PUSERNAME}">{L_POSTS}</a><!-- END profil_type_user_posts --></td>
-						</tr>
-						<!-- END profile_field -->
-					</tbody>
-				</table>
+				<div class="typography">
+					<div class="headline-page"><h3>Profil</h3></div>
+					<table class="table">
+						<tbody>
+							<!-- BEGIN profile_field -->
+							<tr id="field_id{profile_field.ID}">
+								<td>{profile_field.LABEL}</td>
+								<td>{profile_field.CONTENT}<!-- BEGIN profil_type_user_posts --> [{POST_PERCENT_STATS} / {POST_DAY_STATS}]
+									<br /><a rel="nofollow" href="/st/{PUSERNAME}">{L_SEARCH_USER_POSTS} :</a>
+									<br />&nbsp;- <a rel="nofollow" href="/sta/{PUSERNAME}">{L_TOPICS}</a>
+									<br />&nbsp;- <a rel="nofollow" href="/spa/{PUSERNAME}">{L_POSTS}</a><!-- END profil_type_user_posts --></td>
+							</tr>
+							<!-- END profile_field -->
+						</tbody>
+					</table>
+				</div>
 			</li>
 
 			<li class="sky-tab-content-2">
-				<h2 class="profil-titlu">{L_CONTACT} {USERNAME}</h2>
+				<div class="typography">
+				<div class="headline-page"><h3>{L_CONTACT} {USERNAME}</h3></div>
 				<form action="{S_PROFILE_ACTION}" method="post" name="post">
-					<table class="profil-table" cellspacing="0">
+					<table class="table">
 						<tbody>
 							<!-- BEGIN contact_field -->
 							<tr id="field_id{contact_field.ID}">
-								<td class="profil-label">{contact_field.LABEL}</td>
+								<td>{contact_field.LABEL}</td>
 								<td>{contact_field.CONTENT}</td>
 							</tr>
 							<!-- END contact_field -->
@@ -113,6 +107,7 @@
 					</dl>
 					<!-- END switch_admin_user_comment_active -->
 				</form>
+				</div>
 			</li>
 		</ul>
 	</div>
