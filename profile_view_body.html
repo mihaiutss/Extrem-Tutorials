@@ -1,0 +1,217 @@
+<!-- BEGIN switch_user_logged_in -->
+<div id="pun-visit" class="clearfix">
+	<ul>
+			<li><a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a></li>
+			<li><a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a></li>
+	</ul>
+	<p>{LOGGED_AS}. {LAST_VISIT_DATE}</p>
+</div>
+<!-- END switch_user_logged_in -->
+<!-- BEGIN switch_user_logged_out -->
+<div id="pun-visit">
+	<p>{L_NOT_CONNECTED} {L_LOGIN_REGISTER}</p>
+</div>
+<!-- END switch_user_logged_out -->
+
+<style>
+/* Profil - mutat ulterior in style.css daca vrei */
+.profil-head{overflow:hidden;background:#F4F6FB;border:1px solid #C5D5F1;padding:10px;margin:0 0 20px}
+.profil-head .profil-avatar{float:left;margin-right:10px}
+.profil-head .profil-avatar img{width:80px;height:80px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px #C5D5F1;object-fit:cover}
+.profil-head .profil-info{overflow:hidden;font-size:12px;color:#555}
+.profil-head .profil-info div{margin-bottom:4px}
+.profil-tabs > .sky-tab-content-1:checked ~ ul > .sky-tab-content-1,
+.profil-tabs > .sky-tab-content-2:checked ~ ul > .sky-tab-content-2{position:relative}
+.profil-tabs h2.profil-titlu{font-size:30px;font-weight:400;margin:0 0 10px}
+.profil-table{width:100%;border:1px solid #C5D5F1;box-shadow:0 1px 3px rgba(0,0,0,.1);background:#fff;margin:0 0 20px}
+.profil-table td{padding:10px;vertical-align:top;border-top:1px solid #C5D5F1;font-size:13px}
+.profil-table tr:first-child td{border-top:0}
+.profil-table td.profil-label{width:40%}
+.profil-table tr:nth-child(odd) td{background:#EAEEF8}
+.profil-table tr:nth-child(even) td{background:#FAFBFD}
+</style>
+
+<div class="main">
+	<div class="main-head">
+		<h1 class="page-title">{L_VIEWING_PROFILE} :: {USERNAME}<!-- BEGIN switch_show_status --> ({USER_ONLINE})<!-- END switch_show_status --></h1>
+	</div>
+
+	<div class="profil-head">
+		<div class="profil-avatar">{AVATAR_IMG}</div>
+		<div class="profil-info">
+			<div>{USERNAME} ({L_LAST_VISITED}: {LAST_VISIT_TIME})</div>
+			<div>{POSTER_RANK}</div>
+			<!-- BEGIN switch_dhow_mp -->
+			<div>{L_PRIVATE_MSG}: {PRIVATE_MSG}</div>
+			<!-- END switch_dhow_mp -->
+			<!-- BEGIN switch_allow_friendsfoes -->
+			<div>{L_FRIENDS_AND_FOES}: <strong>{FRIENDSFOES}</strong></div>
+			<!-- END switch_allow_friendsfoes -->
+			<!-- BEGIN switch_auth_user -->
+			<div>{L_ADMINISTRATE_USER}: <strong>{ADMINISTRATE_USER}{BAN_USER}</strong></div>
+			<!-- END switch_auth_user -->
+		</div>
+	</div>
+
+	<div class="sky-tabs sky-tabs-pos-top-left sky-tabs-response-to-icons fffx profil-tabs">
+		<input checked class="sky-tab-content-1" id="profil-tab1" name="profil-tabs" type="radio"/>
+		<label for="profil-tab1">
+			<span class="samd">
+				<span><i class="fa fa-user"></i>Profil</span>
+			</span>
+		</label>
+
+		<input class="sky-tab-content-2" id="profil-tab2" name="profil-tabs" type="radio"/>
+		<label for="profil-tab2">
+			<span class="samd">
+				<span><i class="fa fa-info-circle"></i>{L_CONTACT}</span>
+			</span>
+		</label>
+
+		<ul class="tabel-stats1">
+			<li class="sky-tab-content-1">
+				<h2 class="profil-titlu">Profil</h2>
+				<table class="profil-table" cellspacing="0">
+					<tbody>
+						<!-- BEGIN profile_field -->
+						<tr id="field_id{profile_field.ID}">
+							<td class="profil-label">{profile_field.LABEL}</td>
+							<td>{profile_field.CONTENT}<!-- BEGIN profil_type_user_posts --> [{POST_PERCENT_STATS} / {POST_DAY_STATS}]
+								<br /><a rel="nofollow" href="/st/{PUSERNAME}">{L_SEARCH_USER_POSTS} :</a>
+								<br />&nbsp;- <a rel="nofollow" href="/sta/{PUSERNAME}">{L_TOPICS}</a>
+								<br />&nbsp;- <a rel="nofollow" href="/spa/{PUSERNAME}">{L_POSTS}</a><!-- END profil_type_user_posts --></td>
+						</tr>
+						<!-- END profile_field -->
+					</tbody>
+				</table>
+			</li>
+
+			<li class="sky-tab-content-2">
+				<h2 class="profil-titlu">{L_CONTACT} {USERNAME}</h2>
+				<form action="{S_PROFILE_ACTION}" method="post" name="post">
+					<table class="profil-table" cellspacing="0">
+						<tbody>
+							<!-- BEGIN contact_field -->
+							<tr id="field_id{contact_field.ID}">
+								<td class="profil-label">{contact_field.LABEL}</td>
+								<td>{contact_field.CONTENT}</td>
+							</tr>
+							<!-- END contact_field -->
+						</tbody>
+					</table>
+
+					<!-- BEGIN switch_admin_user_comment_active -->
+					<dl>
+						<dt>{L_COMMENTS} :<br /><span class="italic">{L_MODS_AND_ADMINS}</span></dt>
+						<dd><textarea name="admin_user_comment_text" rows="8" cols="30">{ADMIN_USER_COMMENT}</textarea></dd>
+					</dl>
+					<dl class="frm-buttons clearfix">
+						<dt>&nbsp;</dt>
+						<dd><input type="hidden" value="update_admin_user_comment" name="mode" />
+						<input type="hidden" value="{USER_ID}" name="userid" />
+						<input type="submit" name="user_comment_maj" value="{L_UPDATE}" /></dd>
+					</dl>
+					<!-- END switch_admin_user_comment_active -->
+				</form>
+			</li>
+		</ul>
+	</div>
+
+	<!-- BEGIN switch_rpg -->
+	<div class="main-head">
+		<div class="subtitle">{L_VIEWING_RPG}</div>
+	</div>
+
+	<div class="main-content frm clearfix">
+		<fieldset class="frm-set multi">
+			<dl>
+				<dt>{RPG_IMAGE}</dt>
+				<dd>&nbsp;</dd>
+			</dl>
+		</fieldset>
+
+		<fieldset class="frm-set left rpg">
+		<!-- BEGIN rpg_fields_left -->
+			<dl>
+				<dt>{switch_rpg.rpg_fields_left.F_NAME} :</dt>
+				<dd>{switch_rpg.rpg_fields_left.F_VALUE_NEW}</dd>
+			</dl>
+		<!-- END rpg_fields_left -->
+		</fieldset>
+
+		<fieldset class="frm-set right rpg">
+		<!-- BEGIN rpg_fields -->
+			<dl>
+				<dt>{switch_rpg.rpg_fields.F_NAME} :</dt>
+				<dd>{switch_rpg.rpg_fields.F_VALUE_NEW}</dd>
+			</dl>
+		<!-- END rpg_fields -->
+		</fieldset>
+		<br class="clear" />
+		<fieldset class="frm-set clearfix">
+			<div class="frm-buttons">
+				{U_ADMIN_RPG}
+			</div>
+		</fieldset>
+		<br />
+	</div>
+	<!-- END switch_rpg -->
+</div>
+<script src="{JQUERY_ROOT}json/jquery.json-1.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(){
+		$('[id^=field_id]').each(function(){
+			if ( $(this).find('.field_editable').is('span, div') )
+			{
+				$(this).hover(function()
+				{
+					if( $(this).find('.field_editable.invisible').is('span, div') )
+					{
+						$(this).find('.field_editable').prev().addClass('ajax-profil_hover').parent().addClass('ajax-profil_parent').append('<div class="ajax-profil_edit"><img src="{AJAX_EDIT_IMG}" /></div>');
+						$(this).find('.ajax-profil_edit').attr({
+								alt: "{L_FIELD_EDIT_VALUE}",
+								title: "{L_FIELD_EDIT_VALUE}"
+							}).click(function(){
+							$(this).prev().prev().removeClass('ajax-profil_hover').addClass('invisible').next().removeClass('invisible').append('<img src="{AJAX_VALID_IMG}" class="ajax-profil_valid" />').find('input,select');
+							$(this).prev().find('.ajax-profil_valid').attr({
+								alt: "{L_VALIDATE}",
+								title: "{L_VALIDATE}"
+							}).click(function(){
+								var content = new Array();
+								$(this).parent().find('[name]').each(function(){
+									var type_special = $(this).is('input[type=radio],input[type=checkbox]');
+									if ( (type_special && $(this).is(':checked')) || !type_special )
+									{
+										content.push(new Array($(this).attr('name'), $(this).attr('value')));
+									}
+								});
+								var id_name = $(this).parents('[id^=field_id]').attr('id');
+								var id = id_name.substring(8, id_name.length);
+								$.post(
+									"{U_AJAX_PROFILE}",
+									{id:id,user:"{CUR_USER_ID}",active:"{CUR_USER_ACTIVE}",content:$.toJSON(content),tid:"{TID}"},
+									function(data){
+										$.each(data, function(i, item){
+											$('[id=field_id' + i + ']').find('.field_uneditable').html(item).end().find('.ajax-profil_valid').remove().end().find('.field_editable').addClass('invisible').end().find('.field_uneditable').removeClass('invisible');
+										});
+									},
+									"json"
+								);
+							});
+							$(this).remove();
+						});
+					}
+				},function()
+				{
+					if( $(this).find('.field_editable.invisible').is('span, div') )
+					{
+						$(this).find('.field_editable').prev().removeClass('ajax-profil_hover');
+						$(this).find('.ajax-profil_edit').remove();
+					}
+				});
+			}
+		});
+	});
+//]]>
+</script>
