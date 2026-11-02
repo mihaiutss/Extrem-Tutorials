@@ -464,56 +464,56 @@ ul.ipsType_small > li.new:before{content:"";padding:5px;background:url("https://
 .qlabs_tooltip_style_39 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_39 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_39 > span:after{border-top:8px solid #f97d19;border-top:8px solid rgba(248, 111, 0, 0.9)}
-.qlabs_tooltip_style_39 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_notice_1.png");float:left}
+.qlabs_tooltip_style_39 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/vRss0Pt.png");float:left}
 .qlabs_tooltip_style_39 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_40 > span{color:#fff!important;background:#dc3a3a;background:rgba(216, 37, 37, 0.9);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -2px 0 #c22828;-moz-box-shadow:inset 0 -2px 0 #c22828;box-shadow:inset 0 -2px 0 #c22828;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_40> span a,
 .qlabs_tooltip_style_40 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_40 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_40 > span:after{border-top:8px solid #dc3a3a;border-top:8px solid rgba(216, 37, 37, 0.9)}
-.qlabs_tooltip_style_40 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_cross_1.png");float:left}
+.qlabs_tooltip_style_40 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/ySofn5U.png");float:left}
 .qlabs_tooltip_style_40 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_41 > span{color:#fff!important;background:#689b22;background:rgba(88, 144, 10, 0.9);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -2px 0 #588816;-moz-box-shadow:inset 0 -2px 0 #588816;box-shadow:inset 0 -2px 0 #588816;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_41 > span a,
 .qlabs_tooltip_style_41 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_41 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_41 > span:after{border-top:8px solid #689b22;border-top:8px solid rgba(88, 144, 10, 0.9)}
-.qlabs_tooltip_style_41 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_tick_1.png");float:left}
+.qlabs_tooltip_style_41 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/O96wvqd.png");float:left}
 .qlabs_tooltip_style_41 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_42 > span{color:#fff!important;background:#298ac2;background:rgba(18, 125, 187, 0.9);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -2px 0 #1675ac;-moz-box-shadow:inset 0 -2px 0 #1675ac;box-shadow:inset 0 -2px 0 #1675ac;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_42 > span a,
 .qlabs_tooltip_style_42 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_42 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_42 > span:after{border-top:8px solid #298ac2;border-top:8px solid rgba(18, 125, 187, 0.9)}
-.qlabs_tooltip_style_42 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_info_1.png");float:left}
+.qlabs_tooltip_style_42 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/E2pHa3Y.png");float:left}
 .qlabs_tooltip_style_42 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_43 > span{color:#fff!important;background:#ffab00;background:-moz-linear-gradient(top, #ffb400 0%, #ffa200 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffb400), color-stop(100%, #ffa200));background:-webkit-linear-gradient(top, #ffb400 0%, #ffa200 100%);background:-o-linear-gradient(top, #ffb400 0%, #ffa200 100%);background:-ms-linear-gradient(top, #ffb400 0%, #ffa200 100%);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -1px 0 0 #fc8800;-moz-box-shadow:inset 0 -1px 0 0 #fc8800;box-shadow:inset 0 -1px 0 0 #fc8800;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_43 > span a,
 .qlabs_tooltip_style_43 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_43 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_43 > span:after{border-top:8px solid #ffab00!important}
-.qlabs_tooltip_style_43 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_notice_2.png");float:left}
+.qlabs_tooltip_style_43 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/WHBLLEX.png");float:left}
 .qlabs_tooltip_style_43 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_44 > span{color:#fff!important;background:#e03131;background:-moz-linear-gradient(top, #e63333 0%, #da2f2f 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #e63333), color-stop(100%, #da2f2f));background:-webkit-linear-gradient(top, #e63333 0%, #da2f2f 100%);background:-o-linear-gradient(top, #e63333 0%, #da2f2f 100%);background:-ms-linear-gradient(top, #e63333 0%, #da2f2f 100%);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -1px 0 0 #c20b0b;-moz-box-shadow:inset 0 -1px 0 0 #c20b0b;box-shadow:inset 0 -1px 0 0 #c20b0b;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_44 > span a,
 .qlabs_tooltip_style_44 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_44 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_44 > span:after{border-top:8px solid #e03131!important}
-.qlabs_tooltip_style_44 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url(../img/icon_cross_2.png);float:left}
+.qlabs_tooltip_style_44 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/iGaULM6.png");float:left}
 .qlabs_tooltip_style_44 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_45 > span{color:#fff!important;background:#70a91c;background:-moz-linear-gradient(top, #7cad1f 0%, #64a51a 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #7cad1f), color-stop(100%, #64a51a));background:-webkit-linear-gradient(top, #7cad1f 0%, #64a51a 100%);background:-o-linear-gradient(top, #7cad1f 0%, #64a51a 100%);background:-ms-linear-gradient(top, #7cad1f 0%, #64a51a 100%);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -1px 0 0 #4c8908;-moz-box-shadow:inset 0 -1px 0 0 #4c8908;box-shadow:inset 0 -1px 0 0 #4c8908;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_45 > span a,
 .qlabs_tooltip_style_45 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_45 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_45 > span:after{border-top:8px solid #70a91c!important}
-.qlabs_tooltip_style_45 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_tick_2.png");float:left}
+.qlabs_tooltip_style_45 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/iGaULM6.png");float:left}
 .qlabs_tooltip_style_45 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_46 > span{color:#fff!important;background:#009ae1;background:-moz-linear-gradient(top, #00a4e9 0%, #0092da 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a4e9), color-stop(100%, #0092da));background:-webkit-linear-gradient(top, #00a4e9 0%, #0092da 100%);background:-o-linear-gradient(top, #00a4e9 0%, #0092da 100%);background:-ms-linear-gradient(top, #00a4e9 0%, #0092da 100%);-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-shadow:0 1px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow:inset 0 -1px 0 0 #0078b4;-moz-box-shadow:inset 0 -1px 0 0 #0078b4;box-shadow:inset 0 -1px 0 0 #0078b4;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_46 > span a,
 .qlabs_tooltip_style_46 > span a:visited{color:#fff;text-decoration:none}
 .qlabs_tooltip_style_46 > span a:hover{text-decoration:underline}
 .qlabs_tooltip_style_46 > span:after{border-top:8px solid #009ae1!important}
-.qlabs_tooltip_style_46 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_info_2.png");float:left}
+.qlabs_tooltip_style_46 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/1O2C2fN.png");float:left}
 .qlabs_tooltip_style_46 > span strong{font-size:18px!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_47 > span{color:#555!important;background:#fff;border:5px solid #e5e5e5;border:5px solid rgba(0, 0, 0, 0.1);-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_47 > span a,
@@ -540,7 +540,7 @@ ul.ipsType_small > li.new:before{content:"";padding:5px;background:url("https://
 .qlabs_tooltip_focus_diagonal_right_top.qlabs_tooltip_style_47 > span:after{top:-15px}
 .qlabs_tooltip_diagonal_left_top.qlabs_tooltip_style_47 > span:after,
 .qlabs_tooltip_focus_diagonal_left_top.qlabs_tooltip_style_47 > span:after{top:-15px}
-.qlabs_tooltip_style_47 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_notice_3.png");float:left}
+.qlabs_tooltip_style_47 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/NXWaYU9.png");float:left}
 .qlabs_tooltip_style_47 > span strong{font-size:18px!important;color:#ffa11a!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_48 > span{color:#555!important;background:#fff;border:5px solid #e5e5e5;border:5px solid rgba(0, 0, 0, 0.1);-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_48 > span a,
@@ -567,7 +567,7 @@ ul.ipsType_small > li.new:before{content:"";padding:5px;background:url("https://
 .qlabs_tooltip_focus_diagonal_right_top.qlabs_tooltip_style_48 > span:after{top:-15px}
 .qlabs_tooltip_diagonal_left_top.qlabs_tooltip_style_48 > span:after,
 .qlabs_tooltip_focus_diagonal_left_top.qlabs_tooltip_style_48 > span:after{top:-15px}
-.qlabs_tooltip_style_48 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_cross_3.png");float:left}
+.qlabs_tooltip_style_48 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/iZE81W0.png");float:left}
 .qlabs_tooltip_style_48 > span strong{font-size:18px!important;color:#e34646!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_49 > span{color:#555!important;background:#fff;border:5px solid #e5e5e5;border:5px solid rgba(0, 0, 0, 0.1);-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_49 > span a,
@@ -594,7 +594,7 @@ ul.ipsType_small > li.new:before{content:"";padding:5px;background:url("https://
 .qlabs_tooltip_focus_diagonal_right_top.qlabs_tooltip_style_49 > span:after{top:-15px}
 .qlabs_tooltip_diagonal_left_top.qlabs_tooltip_style_49 > span:after,
 .qlabs_tooltip_focus_diagonal_left_top.qlabs_tooltip_style_49 > span:after{top:-15px}
-.qlabs_tooltip_style_49 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_tick_3.png");float:left}
+.qlabs_tooltip_style_49 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/99DJcjL.png");float:left}
 .qlabs_tooltip_style_49 > span strong{font-size:18px!important;color:#77b236!important;padding:8px 10px 0!important}
 .qlabs_tooltip_style_50 > span{color:#555!important;background:#fff;border:5px solid #e5e5e5;border:5px solid rgba(0, 0, 0, 0.1);-moz-background-clip:padding;-webkit-background-clip:padding;background-clip:padding-box;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;padding-left:54px!important;min-height:34px!important}
 .qlabs_tooltip_style_50 > span a,
@@ -621,7 +621,7 @@ ul.ipsType_small > li.new:before{content:"";padding:5px;background:url("https://
 .qlabs_tooltip_focus_diagonal_right_top.qlabs_tooltip_style_50 > span:after{top:-15px}
 .qlabs_tooltip_diagonal_left_top.qlabs_tooltip_style_50 > span:after,
 .qlabs_tooltip_focus_diagonal_left_top.qlabs_tooltip_style_50 > span:after{top:-15px}
-.qlabs_tooltip_style_50 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("../img/icon_info_3.png");float:left}
+.qlabs_tooltip_style_50 > span:before{content:"";display:block;position:absolute;left:10px;top:10px;width:34px;height:34px;background:url("https://i.imgur.com/QBqZQgV.png");float:left}
 .qlabs_tooltip_style_50 > span strong{font-size:18px!important;color:#369ed6!important;padding:8px 10px 0!important}
 .cursor_help{cursor:help}
 .cursor_pointer{cursor:pointer}
