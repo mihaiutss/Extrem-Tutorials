@@ -119,6 +119,13 @@ showHiddenMessage = function(id)
             <a href="#bottom">{L_GOTO_DOWN}</a>&nbsp;&nbsp;
 			{L_MESSAGE} [{PAGE_NUMBER}]
 		</p>
+		<p class="options">
+			<input type="hidden" name="t" value="{TOPIC_ID}" />
+			<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
+			<!-- BEGIN viewtopic_bottom -->
+			{S_TOPIC_ADMIN}
+			<!-- END viewtopic_bottom -->
+		</p>
 	</div>
 
 	<div class="main-content topic">
@@ -184,7 +191,7 @@ showHiddenMessage = function(id)
 						<!-- END switch_signature -->
 					</div>
 					<div class="tools">
-                                          <i class="fa fa-lock"></i> {postrow.displayed.IP_IMG} <i class="fa fa-user-secret"></i> Adresa IP</div>
+						<i class="fa fa-lock"></i> Adresa IP {postrow.displayed.IP_IMG}
 						{postrow.displayed.THANK_IMG} {postrow.displayed.MULTIQUOTE_IMG} {postrow.displayed.QUOTE_IMG} {postrow.displayed.EDIT_IMG} {postrow.displayed.DELETE_IMG} {postrow.displayed.REPORT_IMG}
 					</div>
 				</div>
@@ -222,50 +229,78 @@ showHiddenMessage = function(id)
 	</script>
 	</div>
 
-	<div class="main-foot clearfix">
-		<p class="h2">
-            <!-- BEGIN switch_isconnect -->
-			<a href="{U_VIEW_OLDER_TOPIC}">{L_VIEW_PREVIOUS_TOPIC}</a>&nbsp;<a href="{U_VIEW_NEWER_TOPIC}">{L_VIEW_NEXT_TOPIC}</a>&nbsp;
-            <!-- END switch_isconnect -->
-            <a href="#top">{L_BACK_TO_TOP}</a>&nbsp;&nbsp;
-			{L_MESSAGE} [{PAGE_NUMBER}]
-		</p>
-		<p class="options">
-			<input type="hidden" name="t" value="{TOPIC_ID}" />
-
-			<!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
-			<input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
-
-			<!-- BEGIN viewtopic_bottom -->
-			{S_TOPIC_ADMIN}
-			<!-- END viewtopic_bottom -->
-		</p>
-	</div>
-
 	<a name="bottomtitle"></a>
 
+	<!-- BEGIN topicpagination -->
 	<div class="paged-foot clearfix">
-		<!-- BEGIN topicpagination -->
 		<p class="paging">{PAGINATION}</p>
-		<!-- END topicpagination -->
-		<p class="posting">
-			<!-- BEGIN switch_user_authpost -->
-			<a href="{U_POST_NEW_TOPIC}" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;&nbsp;
-			<!-- END switch_user_authpost -->
-
-			<!-- BEGIN switch_user_authreply -->
-			<a href="{U_POST_REPLY_TOPIC}"><img src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
-			<!-- END switch_user_authreply -->
-		</p>
 	</div>
+	<!-- END topicpagination -->
 
 </div>
 
-<div class="pun-crumbs">
-	<p class="crumbs">
-		<a href="{U_INDEX}">{L_INDEX}</a>{NAV_CAT_DESC}&nbsp;&raquo;&nbsp;
-		<strong><a href="{TOPIC_URL}">{TOPIC_TITLE}</a></strong>
-	</p>
+<div id="footer" class="paddingbottom">
+<div class="gradient-effect">
+    <div class="container">
+        <div class="row">
+
+            <!-- TOP LUNAR -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-users"></i> Top lunar</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><a href="#">Emanueltutorials</a></div>
+                        <div class="poster-win"><a href="#">Madross</a></div>
+                        <div class="poster-win"><a href="#">MihaiExtremTutorials</a></div>
+                        <div class="poster-win"><a href="#">BebeZEW</a></div>
+                        <div class="poster-win"><a href="#">kresk0va^</a></div>
+                        <div class="poster-win"><a href="#">RyNo</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SONDAJ -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-question-circle"></i> Sondaj</h2>
+                    </div>
+                    <div class="main-content sondaj">
+                        <p><b>Va place forumu nostru?</b></p>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Imi place</label></dt><dd style="margin:0">74% [ 148 ]</dd></dl>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Mai trebuie lucrat la el</label></dt><dd style="margin:0">9% [ 18 ]</dd></dl>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Nu imi place</label></dt><dd style="margin:0">17% [ 33 ]</dd></dl>
+                        <p style="margin:20px 0 0">Total voturi : 199</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBIECTELE CELE MAI ACTIVE -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-bar-chart"></i> Subiectele cele mai active</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">[ro]Animate IPB Theme</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Wireless ipb theme [punBB]</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Emanuel Tutorials Theme</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Ipb Counter-strike Special FG</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">SG Blue - O tema pentru forumurile de gaming.</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Tabel Anunt Global</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Sliding Menu Bar V5</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Tema InvataUsor</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Simple &amp; Sexy Template</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Creatii Grafice - Bogdan</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 </div>
 
 <!-- BEGIN promot_trafic -->
@@ -312,14 +347,6 @@ showHiddenMessage = function(id)
 <a name="quickreply"></a>
 {QUICK_REPLY_FORM}
 <!-- END switch_user_logged_in -->
-
-<div id="pun-info" class="main">
-	<div class="main-content">
-		<div id="stats">
-			<p>{L_TABS_PERMISSIONS} <br />{S_AUTH_LIST}</p>
-		</div>
-	</div>
-</div>
 
 <!-- BEGIN switch_image_resize -->
 <script type="text/javascript">
