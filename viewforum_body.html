@@ -88,3 +88,82 @@
 	<li><img src="{FOLDER_GLOBAL_ANNOUNCE_IMG}" alt="{L_FOLDER_GLOBAL_ANNOUNCE_IMG}" />&nbsp;{L_FOLDER_GLOBAL_ANNOUNCE_IMG}</li>
 </ul>
 <!-- END switch_legend -->
+
+<div id="footer" class="paddingbottom">
+<div class="gradient-effect">
+    <div class="container">
+        <div class="row">
+
+            <!-- TOP LUNAR -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-users"></i> Top lunar</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><a href="#">Emanueltutorials</a></div>
+                        <div class="poster-win"><a href="#">Madross</a></div>
+                        <div class="poster-win"><a href="#">MihaiExtremTutorials</a></div>
+                        <div class="poster-win"><a href="#">BebeZEW</a></div>
+                        <div class="poster-win"><a href="#">kresk0va^</a></div>
+                        <div class="poster-win"><a href="#">RyNo</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SONDAJ -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-question-circle"></i> Sondaj</h2>
+                    </div>
+                    <div class="main-content sondaj">
+                        <p><b>Va place forumu nostru?</b></p>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Imi place</label></dt><dd style="margin:0">74% [ 148 ]</dd></dl>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Mai trebuie lucrat la el</label></dt><dd style="margin:0">9% [ 18 ]</dd></dl>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Nu imi place</label></dt><dd style="margin:0">17% [ 33 ]</dd></dl>
+                        <p style="margin:20px 0 0">Total voturi : 199</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBIECTELE CELE MAI ACTIVE -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-bar-chart"></i> Subiectele cele mai active</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">[ro]Animate IPB Theme</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Wireless ipb theme [punBB]</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Emanuel Tutorials Theme</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Ipb Counter-strike Special FG</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">SG Blue - O tema pentru forumurile de gaming.</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Tabel Anunt Global</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Sliding Menu Bar V5</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Tema InvataUsor</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Simple &amp; Sexy Template</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Creatii Grafice - Bogdan</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+/* muta banda cu widget-uri sub coloana principala si sidebar, pe toata latimea wrapper-ului (ca in original) */
+document.addEventListener('DOMContentLoaded', function () {
+	var f = document.getElementById('footer');
+	if (!f) { return; }
+	var pb = document.getElementById('page-body');
+	var pf = document.getElementById('page-footer');
+	if (pb && pb.parentNode && pb.contains(f)) {
+		pb.parentNode.insertBefore(f, pb.nextSibling);      // dupa #page-body (sub coloana si sidebar)
+	} else if (pf && pf.parentNode) {
+		pf.parentNode.insertBefore(f, pf);                  // sau inainte de copyright
+	}
+});
+</script>
