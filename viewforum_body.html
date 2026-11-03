@@ -1,0 +1,184 @@
+<!-- BEGIN switch_user_logged_in -->
+<div id="pun-visit" class="clearfix">
+	<ul>
+        <!-- BEGIN show_plus_menu -->
+		<li>
+				<script type="text/javascript">//<![CDATA[
+				var url_newposts = '{U_NEWPOSTS_JS_PLUS_MENU}';
+				var url_egosearch = '{U_EGOSEARCH_JS_PLUS_MENU}';
+				var url_unanswered = '{U_UNANSWERED_JS_PLUS_MENU}';
+				var url_watchsearch = '{U_WATCHSEARCH_JS_PLUS_MENU}';
+				insert_plus_menu_new('f{FORUM_ID}&amp;f={FORUM_ID}','{JS_SESSION_ID}', {JS_AUTH_FAVOURITES});
+			//]]>
+			</script>
+		</li>
+        <!-- END show_plus_menu -->
+			<li><a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a></li>
+			<li><a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a></li>
+			<li><a href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a></li>
+	</ul>
+	<p>{LOGGED_AS}. {LAST_VISIT_DATE}</p>
+</div>
+<!-- END switch_user_logged_in -->
+<!-- BEGIN switch_user_logged_out -->
+<div id="pun-visit">
+	<p>{L_NOT_CONNECTED} {L_LOGIN_REGISTER}</p>
+</div>
+<!-- END switch_user_logged_out -->
+
+{BOARD_INDEX}
+
+<div class="main paged">
+	<div class="paged-head clearfix">
+		<p class="paging">{PAGINATION}</p>
+		<!-- BEGIN switch_user_authpost -->
+		<p class="posting"><a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a></p>
+		<!-- END switch_user_authpost -->
+	</div>
+
+	{TOPICS_LIST_BOX}
+
+	<div class="paged-foot clearfix">
+		<!-- BEGIN switch_sort_options -->
+		<div id="sort-box">
+			<div id="sort-btn">{switch_sort_options.L_SORT}</div>
+			<form method="post" class="sort-form main">
+				<div class="main-head">
+					<div class="h3">{switch_sort_options.L_SORT_BY}</div>
+				</div>
+				<div class="main-content">
+					<select name="sort_method">
+                        {switch_sort_options.S_OPTIONS}
+					</select>
+					<div><b>{switch_sort_options.L_ORDER}</b></div>
+					<div>
+						<label><input type="radio" name="sort_order" id="sort_order_d" value="0" {switch_sort_options.DESC_CHECKED}/> {switch_sort_options.L_DESC}</label>
+						<label><input type="radio" name="sort_order" id="sort_order_a" value="1" {switch_sort_options.ASC_CHECKED}/> {switch_sort_options.L_ASC}</label>
+					</div>
+					<input class="btn btn-default" type="submit" value="{switch_sort_options.L_SORT}"/>
+				</div>
+			</form>
+		</div>
+
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function() {
+				var sort_btn = $('#sort-btn');
+				sort_btn.on('click', function() {
+					sort_btn.toggleClass('expanded');
+				});
+
+				document.onclick = function(e){
+					if ($(e.target).parents('#sort-box').length==0) {
+						document.getElementById('sort-btn').classList.remove('expanded');
+					}
+				};
+			});
+			//]]>
+		</script>
+		<!-- END switch_sort_options -->
+		<p class="paging">{PAGINATION}</p>
+		<!-- BEGIN switch_user_authpost -->
+		<p class="posting"><a href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a></p>
+		<!-- END switch_user_authpost -->
+	</div>
+
+</div>
+
+<div class="pun-crumbs">
+	<p class="crumbs"><a href="{U_INDEX}"><span>{L_INDEX}</span></a><strong>{NAV_CAT_DESC}</strong></p>
+</div>
+
+<div id="pun-info" class="main">
+	<div class="main-content">
+		<div id="stats">
+			<p class="right">{L_MODERATOR} : {MODERATORS}</p>
+			{LOGGED_IN_USER_LIST}
+		</div>
+		<div id="onlinelist">
+			<p>{L_TABS_PERMISSIONS} <br />{S_AUTH_LIST}</p>
+		</div>
+	</div>
+</div>
+<div id="footer" class="paddingbottom">
+<div class="gradient-effect">
+    <div class="container">
+        <div class="row">
+
+            <!-- TOP LUNAR -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-users"></i> Top lunar</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><a href="#">Emanueltutorials</a></div>
+                        <div class="poster-win"><a href="#">Madross</a></div>
+                        <div class="poster-win"><a href="#">MihaiExtremTutorials</a></div>
+                        <div class="poster-win"><a href="#">BebeZEW</a></div>
+                        <div class="poster-win"><a href="#">kresk0va^</a></div>
+                        <div class="poster-win"><a href="#">RyNo</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SONDAJ -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-question-circle"></i> Sondaj</h2>
+                    </div>
+                    <div class="main-content sondaj">
+                        <p><b>Va place forumu nostru?</b></p>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Imi place</label></dt><dd style="margin:0">74% [ 148 ]</dd></dl>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Mai trebuie lucrat la el</label></dt><dd style="margin:0">9% [ 18 ]</dd></dl>
+                        <dl style="display:flex;justify-content:space-between;margin:0;padding:10px 0 11px;"><dt style="font-weight:400"><label>Nu imi place</label></dt><dd style="margin:0">17% [ 33 ]</dd></dl>
+                        <p style="margin:20px 0 0">Total voturi : 199</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBIECTELE CELE MAI ACTIVE -->
+            <div class="span4">
+                <div class="module main">
+                    <div class="headline-page">
+                        <h2><i class="fa fa-bar-chart"></i> Subiectele cele mai active</h2>
+                    </div>
+                    <div class="main-content">
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">[ro]Animate IPB Theme</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Wireless ipb theme [punBB]</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Emanuel Tutorials Theme</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Ipb Counter-strike Special FG</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">SG Blue - O tema pentru forumurile de gaming.</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Tabel Anunt Global</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Sliding Menu Bar V5</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Tema InvataUsor</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Simple &amp; Sexy Template</a></div>
+                        <div class="poster-win"><i class="fa fa-arrow-right"></i> <a href="#">Creatii Grafice - Bogdan</a></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+<div id="page-footer">
+  <div class="container">
+    <div class="span12">
+      <div id="pun-about" class="clearfix">Copyright © 2011-2017 <a href="https://www.extrem-tutorials.com/">Extrem Tutorials</a>. All right reserved. <br>
+        <ul>
+          <li>Powered by <a href="http://punbb.informer.com/" rel="nofollow">PunBB</a> © Forum Software |&nbsp; <a href="https://www.extrem-tutorials.com/contact">Contact</a> |&nbsp; </li>
+          <li class="fm-links">
+            <span class="gensmall">©</span>
+            <a href="https://www.forumgratuit.ro/punbb" target="_blank">PunBB</a>&nbsp;|&nbsp; <a name="bottom" href="https://www.extrem-tutorials.com/contact" rel="nofollow">Contact</a>&nbsp;|&nbsp; <a href="https://allprojects.forumotion.com/abuse?page=%2Ft&amp;report=1" rel="nofollow">Semnaleaza un abuz</a>
+          </li>
+        </ul>
+      </div>
+      <br>
+      <p class="center">
+        <strong></strong>
+      </p>
+    </div>
+  </div>
+</div>
