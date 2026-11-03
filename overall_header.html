@@ -20,8 +20,7 @@
 	<meta name="title" content="{SITENAME_TITLE}{PAGE_TITLE}"/>
 	{T_HEAD_STYLESHEET}
 	{CSS}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@03ec4e2/style.css">
-        <!--- <link rel="stylesheet" href="https://web.archive.org/web/20171230233632cs_/https://147.ip-51-255-166.eu/red_cdn/extremtuts/css/style.css"/> --->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@d4119a7/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700,600italic" rel="stylesheet" type="text/css">
 	<link rel="search" type="application/opensearchdescription+xml" href="/improvedsearch.xml" title="{SITENAME}"/>
@@ -202,7 +201,12 @@
 	</script>
 	<!-- END google_analytics_code -->
 </head>
-
+<script>
+(function(){
+  var p = location.pathname;
+  if (p === '/' || /^\/(index|forum|c\d+)(-|\.|\/|$)/.test(p)) document.documentElement.className += ' et-home';
+})();
+</script>
 <body>
 <!-- BEGIN hitskin_preview -->
 <div id="hitskin_preview" style="display: block;">
@@ -298,23 +302,23 @@
 
 <a id="top" name="top" accesskey="t"></a>
 
-         <body class="punbb-forum-software" id="skin1">
- <div class="null">
-   <div id="fb-root"></div>
-   <div id="wrapper">
-     <div class="pun">
-       <div class="header-bf">
-         <div class="gradient-leader">
-           <!-- Header -->
-           <div id="header">
-             <!-- Logo -->
-             <a href="https://allprojects.forumotion.com">
-               <div class="logo-forum"></div>
-             </a>
-             <div style="clear:both;"></div>
-           </div>
-         </div>
-       </div>
+<body class="punbb-forum-software" id="skinx">
+  <div class="null">
+    <div id="fb-root"></div>
+    <div id="wrapper" class="container">
+      <div class="pun">
+        <div class="header-bf">
+          <div class="gradient-leader">
+            <!-- Header -->
+            <div id="header">
+              <!-- Logo -->
+              <a href="/">
+                <div class="logo-forum"></div>
+              </a>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div>
     <div class="drop-down-menu">
     <ul class="sky-mega-menu sky-mega-menu-response-to-stack sky-mega-menu-anim-slide">
         <li><a href="/"><i class="fa fa-home"></i>Prima pagină</a></li>
@@ -381,7 +385,6 @@
         facilitatile acestui forum.</div>
 </noscript>
 </div>
-
 				<!-- BEGIN switch_ticker_new -->
 				<div id="fa_ticker_block" style="padding-top:4px;">
 					<div class="module main">
@@ -417,13 +420,13 @@
 				</div>
 				<!-- END switch_ticker -->
 
-<div id="page-body">
-  <div id="content-container">
-    <div id="clear-board">
-      <div id="extrem-tutorials">
-        <div id="container">
-          <div id="content">
-            <div id="left">
+				<div id="page-body">
+					 <div id="content-container">
+						 <div id="clear-board">
+							 <div id="extrem-tutorials">
+								<div id="container">
+									<div id="content">
+										 <div id="left">
               <div class="developer-mode" style="display: block;">
                 <div class="headline-page">
                   <span class="que que-small">
@@ -484,8 +487,9 @@
               </p>
               <div style="height:1px"></div>
             </div>
-            <div id="main">
-              <div id="main-content">
+										</div>
+										<div id="main">
+											<div id="main-content">
 
 												<!-- BEGIN html_validation -->
 											</div>
@@ -502,7 +506,8 @@
 </div>
 </body>
 </html>
-        <script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@bf5f109/global.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@7ba9563/cookies.js" type="text/javascript"></script>
-        <script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@85eba54/functions.js" type="text/javascript"></script>
 <!-- END html_validation -->
+<script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@c49130b/global.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@79d49f4/cookies.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@c27fa7e/functions.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@d07771d/plugins.js"></script>
