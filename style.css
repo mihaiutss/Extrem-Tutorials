@@ -2947,7 +2947,7 @@ fieldset dd{margin-bottom:3px;margin-left:41%;vertical-align:top}
 .participate span,
 .participate img{display:none;background:#49AFCD}
 .participate img + span{display:block!important;float:right}
-.popular img[src="http://i56.servimg.com/u/f56/18/85/74/21/empty121.gif"] + span{display:block!important;float:right}
+.popular img[src="https://i56.servimg.com/u/f56/18/85/74/21/empty121.gif"] + span{display:block!important;float:right}
 .topic-new img[alt^="Mesaje noi"] + span.label-info{display:block!important;float:left;background:#7CBA2C}
 .topic-new img[alt^="Posteaza un subiect nou"] + a{display:block;float:left}
 .topic-new img[alt^="Acest forum este blocat"] + a + a{display:block!important;float:left}
@@ -3025,7 +3025,7 @@ hr{margin:3px!important}
 #search-google input{max-width:80%!important}
 #footer .input-append input{max-width:60%!important}
 .basic-avatar{padding-bottom:3px}
-img[src="http://i56.servimg.com/u/f56/18/85/74/21/empty110.gif"] + span{display:block!important;float:left;background:#7CBA2C}
+img[src="https://i56.servimg.com/u/f56/18/85/74/21/empty110.gif"] + span{display:block!important;float:left;background:#7CBA2C}
 .col,
 .avatars{float:left}
 .col{padding-top:10px;padding-left:5px}
@@ -3049,7 +3049,7 @@ embed,
 .lastpost-cat strong{margin-left:2px}
 span[style="font-size: 10px; line-height: normal"]{font-size:12px!important}
 .alert .right{margin-top:-3px}
-.popular img[src^="http://i56.servimg.com/u/f56/18/85/74/21/empty110.gif"] + span{display:none!important}
+.popular img[src^="https://i56.servimg.com/u/f56/18/85/74/21/empty110.gif"] + span{display:none!important}
 .resizebox .resize_img{width:50%!important}
 @media (min-width:752px) and (max-width:1024px){#left{display:none}
 #main{width:100%}
@@ -3091,7 +3091,7 @@ span[style="font-size: 10px; line-height: normal"]{font-size:12px!important}
 .label-infos{float:left;margin-right:5px;background:#2d79da!important}
 .entry-title .categorie{display:none}
 .entry-title a{color:#fff!important}
-img[src="http://i56.servimg.com/u/f56/18/85/74/21/empty111.gif"] + span.label-info{display:block;float:left;background:#7CBA2C}
+img[src="https://i56.servimg.com/u/f56/18/85/74/21/empty111.gif"] + span.label-info{display:block;float:left;background:#7CBA2C}
 #appendedInputButton,
 .input-append{font-size:12px}
 .prevent-margin{margin-right:250px!important}
@@ -3148,7 +3148,7 @@ li.unread{font-weight:700}
 .sceditor-button-faspoiler,
 .sceditor-button-source{display:none!important}
 .sceditor-button-image div{background:url("https://i39.servimg.com/u/f39/18/74/45/05/add10.png")!important}
-.sceditor-button-flash div{background:url("http://i39.servimg.com/u/f39/18/74/45/05/script10.png")!important}
+.sceditor-button-flash div{background:url("https://i39.servimg.com/u/f39/18/74/45/05/script10.png")!important}
 .sceditor-button-servimg div{background:url("https://i39.servimg.com/u/f39/18/74/45/05/applic10.png")!important}
 .sceditor-button-fahide div{background:url("https://i39.servimg.com/u/f39/18/74/45/05/fahide10.png")!important}
 .sceditor-button-dailymotion div{background:url("https://i39.servimg.com/u/f39/18/74/45/05/dailym10.png")!important}
@@ -4225,7 +4225,7 @@ section .container{width:auto}
 .sky-tabs-anim-slide-up-right > ul > li{-o-transform:translate(15%, -15%);-ms-transform:translate(15%, -15%);-moz-transform:translate(15%, -15%);-webkit-transform:translate(15%, -15%)}
 .sondaj dd{font-size:11px!important}
 .sondaj dl label{font-size:11px!important}
-.sondaj img[src="http://cdn.openpro.ro//extremtutorials/images/null.gif"]{background:#2d79da!important}
+.sondaj img[src="https://cdn.openpro.ro//extremtutorials/images/null.gif"]{background:#2d79da!important}
 .abcs{padding:5px}
 .sondaj p b{background:#95C522;padding:2px 5px}
 #cookieChoiceInfo{display:none!important}
