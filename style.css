@@ -4388,7 +4388,7 @@ section .container{width:auto}
 body{background:#E8EBEF!important}
 .mark-all{float:right;margin-top:-18px;position:relative;top:-10px;font-size:11px}
 .fa{font:normal normal normal 14px/1 FontAwesome!important}
-.header-bf{background:#2d79da url("../img/texture.png") repeat scroll 50% 100%}
+.header-bf{background:#2d79da url("https://i.imgur.com/k8GS3hE.png") repeat scroll 50% 100%}
 .buton.active span{-webkit-transform:translateY(-111px);-moz-transform:translateY(-111px);-o-transform:translateY(-111px);transform:translateY(-111px)}
 .medi li.active a{background:#74a2fe}
 #text_editor_textarea{width:80%;height:150px}
