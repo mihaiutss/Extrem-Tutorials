@@ -5691,3 +5691,6 @@ margin-right: 5px;
 font-weight: bold;
 border-radius: 100%;
 }
+#main-content, #main-content2, .main-content.frm {
+    padding: 5px!important;
+}
