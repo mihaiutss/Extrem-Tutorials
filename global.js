@@ -10,7 +10,8 @@ function laycookie() {
     my_getcookie("theme_changer") ? (soskin = my_getcookie("theme_changer"), "none" == soskin ? $("body").attr("id", "") : "1" == soskin ? $("body").attr("id", "skin1") : "2" == soskin ? $("body").attr("id", "skin2") : "3" == soskin ? $("body").attr("id", "skin3") : "4" == soskin ? $("body").attr("id", "skin4") : "5" == soskin ? $("body").attr("id", "skin5") : "6" == soskin && $("body").attr("id", "skin6")) : (skinbandau = 1 + Math.floor(12 * Math.random()), 1 == skinbandau && skinhl(1), 2 == skinbandau && skinhl(2), 3 == skinbandau && skinhl(3), 4 == skinbandau && skinhl(4), 5 == skinbandau && skinhl(5), 6 == skinbandau && skinhl(6))
 }
 $(document).ready(function() {
-    $(".ET_likes").html(_userdata.point_reputation), laycookie(), $("#skin-1").click(function() {
+    try { $(".ET_likes").html(_userdata.point_reputation), laycookie() } catch (e) { console.warn("ET skin:", e) }
+    $("#skin-1").click(function() {
         skinhl(1)
     }), $("#skin-2").click(function() {
         skinhl(2)
@@ -90,10 +91,10 @@ Plugins and codes !
 */
 
 /* Only developers */
-document.write('<script src="https://cdn.jsdelivr.net/gh/mihaiutss/Extrem-Tutorials@master/cookies.js" type="text/javascript" async="true"></script>');
+/* cookies.js e deja incarcat din overall_header */
 
 /* Members, admins and moderators file ! */
-jQuery(function(){1!=_userdata.session_logged_in&&1!=_userdata.user_level&&2!=_userdata.user_level&&$('a[href*="&mode=delete"], a[href*="&mode=editpost"').remove()});
+jQuery(function(){try{1!=_userdata.session_logged_in&&1!=_userdata.user_level&&2!=_userdata.user_level&&$('a[href*="&mode=delete"], a[href*="&mode=editpost"]').remove()}catch(e){console.warn("ET delete/edit:",e)}});
 function et_notification(text, color, time, icon) {
     var icon_markup = "<i class='fa fa-info'></i><i class='fa fa-check'></i> ",
         html,
@@ -135,12 +136,12 @@ function ohSnapX(element) {
     }
 }
 
-$(function () {
+$(function () { try {
 	var d = $('a[href="/privmsg?folder=inbox"]');
 	if($('a[href="/privmsg?folder=inbox"]').attr('alt') === ""+ d +" mesaj nou" || $('a[href="/privmsg?folder=inbox"]').attr('alt') === ""+ d +" mesaje noi") {
 		et_notification('Salut '+ _userdata.username +', ai '+ d +' mesaje private necitite ! Verificati inbox-ul de pe forum', 'blue', 10000);
 	}
-});
+} catch (e) { console.warn("ET inbox:", e) } });
 
-$(function(){$(".total_users").each(function(){var a=[];a[0]=$(this).text().match(/\d+/g)[0];a[1]=$(this).text().match(/\d+/g)[1];a[2]=$(this).text().match(/\d+/g)[2];a[3]=$(this).text().match(/\d+/g)[3];a[4]=$(this).text().match(/\d+/g)[4];a[4]||parseInt(a[4])?(a[6]=parseInt(a[0])+parseInt(a[4]),a[7]=parseInt(a[1])+parseInt(a[4]),a[5]="In total sunt <strong>"+a[6]+"</strong> utilizatori conectati: "+a[7]+" Inregistrati, "+a[2]+" Invizibil si "+a[3]+" Vizitatori <br />"):a[5]="In total sunt <strong>"+
-a[0]+"</strong> utilizatori conectati: "+a[1]+" Inregistrati, "+a[2]+" Invizibil si "+a[3]+" Vizitatori <br />";$(this).replaceWith(a[5])})});
+$(function(){try{$(".total_users").each(function(){var a=[];a[0]=$(this).text().match(/\d+/g)[0];a[1]=$(this).text().match(/\d+/g)[1];a[2]=$(this).text().match(/\d+/g)[2];a[3]=$(this).text().match(/\d+/g)[3];a[4]=$(this).text().match(/\d+/g)[4];a[4]||parseInt(a[4])?(a[6]=parseInt(a[0])+parseInt(a[4]),a[7]=parseInt(a[1])+parseInt(a[4]),a[5]="In total sunt <strong>"+a[6]+"</strong> utilizatori conectati: "+a[7]+" Inregistrati, "+a[2]+" Invizibil si "+a[3]+" Vizitatori <br />"):a[5]="In total sunt <strong>"+
+a[0]+"</strong> utilizatori conectati: "+a[1]+" Inregistrati, "+a[2]+" Invizibil si "+a[3]+" Vizitatori <br />";$(this).replaceWith(a[5])})}catch(e){console.warn("ET total_users:",e)}});
