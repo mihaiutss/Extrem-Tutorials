@@ -103,18 +103,18 @@ $(function() {
     console.log("Scriptul sa executat si incarcat cu succes !")
 });
 jQuery(function(a) {
-    255 == ajaxOn ? (a(".developer-mode span.button.button-option-1 i.fa-toggle-on").attr("style", ""), a(".developer-mode span.button.button-option-1 i.fa-toggle-off").attr("style", "display: none")) : (a(".developer-mode span.button.button-option-1 i.fa-toggle-off").attr("style", ""), a(".developer-mode span.button.button-option-1 i.fa-toggle-on").attr("style", "display: none"));
+    255 == ajaxOn ? (a(".developer-mode span.button.button-option-1 i.fa-toggle-on").attr("style", ""), a(".developer-mode span.button.button-option-1 i.fa-toggle-off").attr("style", "display: block")) : (a(".developer-mode span.button.button-option-1 i.fa-toggle-off").attr("style", ""), a(".developer-mode span.button.button-option-1 i.fa-toggle-on").attr("style", "display: block"));
     a(".developer-mode span.button.button-option-1 i.fa-toggle-on").on("click", function() {
         a("i.fa.fa-icon-option-off.fa-toggle-off").attr("style",
             "");
-        a("i.fa.fa-icon-option-on.fa-toggle-on").attr("style", "display: none");
+        a("i.fa.fa-icon-option-on.fa-toggle-on").attr("style", "display: block");
         et_notification("[ET Notif]: Plugin Ajax a fost dezactivat.", "red", 5E3);
         console.log("Ajax a fost dezactivat - " + a(this).attr("style"));
         ssyt_setcookie("et_cookie", "0");
         ssyt_setcookie("et_ajx_active", "255")
     });
     a(".developer-mode span.button.button-option-1 i.fa-toggle-off").on("click", function() {
-        a("i.fa.fa-icon-option-off.fa-toggle-off").attr("style", "display: none");
+        a("i.fa.fa-icon-option-off.fa-toggle-off").attr("style", "display: block");
         a("i.fa.fa-icon-option-on.fa-toggle-on").attr("style", "");
         et_notification("[ET Notif]: Plugin Ajax a fost activat, va fii activ timp de 7 zile",
             "green", 5E3);
