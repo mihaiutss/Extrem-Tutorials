@@ -5691,22 +5691,3 @@ margin-right: 5px;
 font-weight: bold;
 border-radius: 100%;
 }
-
-/* Iconite editor inlocuite cu Font Awesome (2img.net e mort) */
-.sceditor-button-embed div,
-.sceditor-button-twemojifa div{background:none!important;position:relative}
-.sceditor-button-embed div:before,
-.sceditor-button-twemojifa div:before{
-  font-family:FontAwesome;font-size:16px;line-height:20px;color:#555;
-  position:absolute;left:0;right:0;text-align:center}
-.sceditor-button-embed div:before{content:"\f03d"}
-.sceditor-button-twemojifa div:before{content:"\f118"}
-
-/* spoiler: iconita fara dimensiune */
-.sceditor-toolbar .sceditor-button-faspoiler div{width:16px!important;height:16px!important;display:block!important}
-
-/* twemoji: castiga fata de regula platformei */
-body .sceditor-toolbar .sceditor-button-twemojifa div{background:none!important;position:relative}
-body .sceditor-toolbar .sceditor-button-twemojifa div:before{
-  content:"\f118";font-family:FontAwesome;font-size:16px;line-height:20px;color:#555;
-  position:absolute;left:0;right:0;text-align:center}
