@@ -2874,6 +2874,7 @@ a[href^="/abuse"]{font-size:12px!important}
 div{max-width:100%}
 #left{float:right;width:230px;padding:10px}
 #left + #main{margin-right:250px!important;border-right:1px solid #C5D5F1}
+#left {max-width: 95%;border-left: 1px solid #C5D5F1;}
 .editor-blog #text_editor_textarea{width:100%;border:0!important;border-radius:0!important;box-shadow:0 0 0!important;border-bottom:1px solid #C5D5F1!important}
 #left h4{color:#222!important;border-color:#2d79da}
 .avataje li{padding:5px}
