@@ -47,7 +47,7 @@
 				<tr>
 					<td class="tcl tdtopics <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->">
 						<span class="status">
-							<!--- <img title="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" src="{topics_list_box.row.TOPIC_FOLDER_IMG}" alt="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" /> --->
+							<img title="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" src="{topics_list_box.row.TOPIC_FOLDER_IMG}" alt="{topics_list_box.row.L_TOPIC_FOLDER_ALT}" />
 						</span>
 						<!-- BEGIN single_selection -->
 						<input type="radio" name="{topics_list_box.FIELDNAME}" value="{topics_list_box.row.FID}" {topics_list_box.row.L_SELECT} />&nbsp;
@@ -67,8 +67,8 @@
 					</td>
 					<td class="esc mobile-version-cat <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->">
 						<ul>
-							<li class="bigger_element"><b>{topics_list_box.row.REPLIES}</b> replici</li>
-							<li class="bigger_element"><b>{topics_list_box.row.VIEWS}</b> vizite</li>
+							<li><b>{topics_list_box.row.REPLIES}</b> replici</li>
+							<li><b>{topics_list_box.row.VIEWS}</b> vizite</li>
 						</ul>
 					</td>
 					<td class="mobile-version-cat lastpost-cat <!-- BEGIN line_sticky --> sticky-separator <!-- END line_sticky -->">
@@ -76,8 +76,7 @@
 							<!-- BEGIN avatar -->
 							<span class="lastpost-avatar">{topics_list_box.row.topic.avatar.LAST_POST_AVATAR}</span>
 							<!-- END avatar -->
-							la data de {topics_list_box.row.LAST_POST_TIME}<br />
-							Scris de {topics_list_box.row.LAST_POST_AUTHOR} {topics_list_box.row.LAST_POST_IMG}
+							la data de {topics_list_box.row.LAST_POST_TIME} Scris de&nbsp; {topics_list_box.row.LAST_POST_AUTHOR} {topics_list_box.row.LAST_POST_IMG}
 						</div>
 					</td>
 					<!-- BEGIN multi_selection -->
@@ -95,14 +94,20 @@
 			</tbody>
 		</table>
 	</div>
-	<p class="options right mobile-version-cat">
+	<div class="main-foot clearfix" style="height: 30px;">
 		<!-- BEGIN multi_selection -->
-		<a class="btn btn-info btn-small" href=""></a>
+		<input onclick="check_uncheck_all_{topics_list_box.row.header_table.BOX_ID}();" type="checkbox" name="all_mark_{topics_list_box.row.header_table.BOX_ID}" value="0" />
 		<!-- END multi_selection -->
 		<p class="options right mobile-version-cat">
-			<a class="btn btn-info btn-small" href="?watch=forum">Urmareste subiectele acestui forum</a> <a class="btn btn-info btn-small" href="#top">Hai sus!</a></p>
+			<a class="btn btn-info btn-small" href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a> {S_WATCH_FORUM} <a class="btn btn-info btn-small" href="#top">Hai sus!</a>
 		</p>
 	</div>
+	<script type="text/javascript">
+	//<![CDATA[
+	/* {S_WATCH_FORUM} genereaza singur linkul; ii punem aceleasi clase ca restului butoanelor */
+	$(function(){ $('.main-foot .options.right a[href*="watch"]').addClass('btn btn-info btn-small'); });
+	//]]>
+	</script>
 <!-- END bottom -->
 <!-- BEGIN spacer --><br /><!-- END spacer -->
 <!-- END row -->
